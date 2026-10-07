@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Etiquetas logísticas · Dellamed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<style id="page-style">@page{size:100mm 50mm;margin:0}</style>
+<style>
+:root{
+  --navy:#1E2C4F; --navy-2:#2B4170; --navy-3:#16213B; --red:#A6192E; --red-2:#8A1426; --sky:#8BB8E8;
+  --bg:#F0F0F0; --panel:#FFFFFF; --ink:#282727; --muted:#5E6472; --line:#DCDCDC; --line-2:#BCBCBC;
+  --field:#F7F7F7; --hover:#F2F6FC; --sel:#E5EFFA; --sel-line:#8BB8E8; --alert:#A6192E; --alert-bg:#FBEDEF;
+  --ok:#2E7D5B; --kraft:#C79D6E; --kraft-2:#B88B5B; --kraft-ink:#4A3218;
+  --head:'Montserrat',"Segoe UI",Arial,sans-serif; --text:'Open Sans',"Segoe UI",Arial,sans-serif;
+  --label-font:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#111827; --panel:#192235; --ink:#ECEFF4; --muted:#A3ACBD; --line:#2A3650; --line-2:#3A4866;
+    --field:#141D2E; --hover:#1F2B44; --sel:#22365C; --sel-line:#8BB8E8; --alert:#F0788A; --alert-bg:#3A1C25;
+    --ok:#5CC79A; --kraft:#8E6B45; --kraft-2:#7C5C3A; --kraft-ink:#F5E8D6;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111827; --panel:#192235; --ink:#ECEFF4; --muted:#A3ACBD; --line:#2A3650; --line-2:#3A4866;
+  --field:#141D2E; --hover:#1F2B44; --sel:#22365C; --sel-line:#8BB8E8; --alert:#F0788A; --alert-bg:#3A1C25;
+  --ok:#5CC79A; --kraft:#8E6B45; --kraft-2:#7C5C3A; --kraft-ink:#F5E8D6;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:14.5px;line-height:1.45}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+h1,h2,h3{font-family:var(--head)}
+
+/* ---------- cabeçalho ---------- */
+.top{background:linear-gradient(115deg,var(--navy-3) 0%,var(--navy) 45%,var(--navy-2) 100%);color:#fff;padding:0 clamp(16px,3vw,32px);display:flex;align-items:center;gap:18px;min-height:68px;position:relative}
+.top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--red)}
+.top .logo{height:26px;width:auto;display:block;color:#fff;flex:none}
+.top .sep{width:1px;align-self:stretch;margin:18px 0;background:rgba(255,255,255,.22)}
+.top h1{margin:0;font-size:17px;font-weight:700;letter-spacing:-.005em}
+.top p{margin:0;font-size:12.5px;color:#B9C8E6}
+.top .spec{margin-left:auto;display:flex;gap:8px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--head);font-size:12px;font-weight:600;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 12px;color:#fff;white-space:nowrap}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--sky);display:inline-block}
+.top .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:6px 14px;font-family:var(--head);font-weight:600;font-size:12.5px}
+.top .btn-ghost:hover{background:rgba(255,255,255,.1)}
+@media (max-width:760px){.top .sep,.top p,.top .pill{display:none}.top h1{font-size:15px}}
+
+/* ---------- barra de expedição ---------- */
+.dock{background:var(--panel);border-bottom:1px solid var(--line);padding:12px clamp(16px,3vw,32px);display:flex;align-items:center;gap:clamp(14px,3vw,34px);flex-wrap:wrap;position:sticky;top:0;z-index:6}
+.step{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:5px;background:var(--red);color:#fff;font-family:var(--head);font-weight:800;font-size:12px;flex:none}
+.count{display:flex;flex-direction:column;line-height:1.1}
+.count b{font-family:var(--head);font-size:26px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--navy)}
+:root[data-theme="dark"] .count b{color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .count b{color:#fff}}
+.count span{font-size:12px;color:var(--muted)}
+.count.warn b{color:var(--alert)}
+.dock .actions{margin-left:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.steplbl{font-family:var(--head);font-weight:700;font-size:14px;margin-right:6px}
+@media (max-width:760px){.dock{position:static}.dock .actions{margin-left:0}.picker{top:16px}}
+.dock .msg{flex-basis:100%;font-size:12.5px;color:var(--muted);min-height:0}
+.dock .msg:empty{display:none}
+.msg.err{color:var(--alert)}
+
+.btn{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;padding:8px 13px;font-family:var(--head);font-weight:600;font-size:13px;line-height:1.2}
+.btn:hover{border-color:var(--navy);background:var(--hover)}
+.btn.navy{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.navy:hover{background:var(--navy-2)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff;font-weight:700}
+.btn.primary:hover{background:var(--red-2);border-color:var(--red-2)}
+.btn.big{padding:11px 18px;font-size:14px;display:inline-flex;align-items:center;gap:8px}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn svg{width:17px;height:17px;flex:none}
+.row-btns{display:flex;gap:8px;flex-wrap:wrap}
+
+.menu{position:relative}
+.menu > summary{list-style:none}
+.menu > summary::-webkit-details-marker{display:none}
+.menu-pop{position:absolute;right:0;top:calc(100% + 6px);background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(30,44,79,.2);padding:6px;width:300px;z-index:10}
+.menu-pop button{display:block;width:100%;text-align:left;border:0;background:none;border-radius:8px;padding:9px 10px;color:var(--ink)}
+.menu-pop button:hover{background:var(--hover)}
+.menu-pop b{display:block;font-family:var(--head);font-size:13.5px}
+.menu-pop span{font-size:12.5px;color:var(--muted)}
+.menu-pop .dpi{border-top:1px solid var(--line);margin-top:6px;padding:10px 10px 4px;font-size:12.5px;color:var(--muted)}
+.menu-pop .dpi select{margin-top:4px;padding:6px 8px;font-size:13px}
+
+/* ---------- layout ---------- */
+.app{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:20px;padding:20px clamp(16px,3vw,32px) 40px;align-items:start}
+@media (max-width:980px){.app{grid-template-columns:1fr}}
+.sec-title{display:flex;align-items:center;gap:10px;margin:0 0 12px}
+.sec-title h2{margin:0;font-size:15px;font-weight:700;color:var(--ink)}
+.sec-title small{margin-left:auto;font-size:12px;color:var(--muted);font-family:var(--text)}
+
+input[type=search],input[type=number],input[type=text],select,textarea{width:100%;border:1px solid var(--line-2);border-radius:8px;background:var(--field);padding:8px 10px;font-size:14px}
+textarea{min-height:76px;resize:vertical;font-size:13px;font-variant-numeric:tabular-nums}
+
+/* catálogo */
+.picker{background:var(--panel);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;position:sticky;top:96px;max-height:calc(100vh - 112px);overflow:hidden}
+@media (max-width:980px){.picker{position:static;max-height:none}}
+.picker-head{padding:16px 16px 12px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.picker-head .sec-title{margin:0 0 4px}
+.plist{overflow:auto;flex:1;min-height:200px}
+@media (max-width:980px){.plist{max-height:420px}}
+.prow{display:grid;grid-template-columns:1fr 72px;gap:10px;align-items:center;padding:8px 16px;border-bottom:1px solid var(--line);border-left:3px solid transparent}
+.prow:hover{background:var(--hover)}
+.prow.on{background:var(--sel);border-left-color:var(--navy)}
+:root[data-theme="dark"] .prow.on{border-left-color:var(--sky)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .prow.on{border-left-color:var(--sky)}}
+.prow .n{font-family:var(--head);font-size:12.5px;font-weight:600;line-height:1.25}
+.prow .s{font-size:12px;color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums}
+.prow .w{font-size:11.5px;color:var(--alert);font-weight:600;margin-top:2px}
+.prow input{padding:6px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+.picker-foot{border-top:1px solid var(--line);padding:12px 16px;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;background:var(--field)}
+.picker-foot > *{min-width:0}
+details.paste textarea{max-width:100%;box-sizing:border-box}
+details, details *{box-sizing:border-box}
+details.paste summary{font-family:var(--head);font-size:12.5px;font-weight:600;cursor:pointer;color:var(--ink)}
+details.paste[open] summary{margin-bottom:8px}
+
+/* área de conferência */
+.work{display:grid;gap:18px;min-width:0}
+.box{position:relative;border-radius:10px;overflow:hidden;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,.035) 0 2px, transparent 2px 7px),
+    linear-gradient(165deg,var(--kraft),var(--kraft-2));
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.08), inset 0 -18px 30px -24px rgba(0,0,0,.35)}
+.tape{position:absolute;left:0;right:0;top:22px;height:34px;background-color:var(--navy);opacity:.96;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='240 809 882 103' fill-opacity='.9'%3E%3Cpath fill='%23ffffff' d='M 282.449219 832.714844 L 293.277344 821.886719 C 284.246094 814.304688 272.953125 810.171875 261.019531 810.171875 L 240.511719 810.171875 L 240.511719 825.382812 L 261.019531 825.382812 C 269.085938 825.382812 276.519531 828.121094 282.449219 832.714844  M 282.449219 888.175781 C 276.519531 892.769531 269.085938 895.507812 261.019531 895.507812 L 240.511719 895.507812 L 240.511719 910.71875 L 261.019531 910.71875 C 272.953125 910.71875 284.246094 906.585938 293.277344 899.003906 Z M 282.449219 888.175781  M 290.078125 880.046875 L 300.984375 890.953125 C 307.667969 882.230469 311.292969 871.617188 311.292969 860.445312 C 311.292969 849.273438 307.667969 838.65625 300.984375 829.9375 L 290.078125 840.84375 C 293.867188 846.445312 296.082031 853.191406 296.082031 860.445312 C 296.082031 867.699219 293.867188 874.445312 290.078125 880.046875  M 240.511719 836.46875 L 259.28125 836.46875 C 272.523438 836.46875 283.257812 847.203125 283.257812 860.445312 C 283.257812 873.6875 272.523438 884.421875 259.28125 884.421875 L 240.511719 884.421875  M 444.175781 872.808594 L 444.175781 832.375 L 436.148438 832.375 L 436.148438 873.273438 C 436.148438 881.34375 442.75 887.945312 450.820312 887.945312 L 451.167969 887.945312 L 451.167969 879.992188 C 447.304688 879.886719 444.175781 876.695312 444.175781 872.808594  M 467.398438 872.808594 L 467.398438 832.375 L 459.371094 832.375 L 459.371094 873.273438 C 459.371094 881.34375 465.972656 887.945312 474.042969 887.945312 L 474.386719 887.945312 L 474.386719 879.992188 C 470.523438 879.886719 467.398438 876.695312 467.398438 872.808594  M 391.71875 870.378906 C 393.472656 876.28125 398.941406 880.449219 405.238281 880.449219 C 408.992188 880.449219 412.554688 878.972656 415.210938 876.320312 L 416.246094 875.285156 L 421.949219 880.988281 L 420.910156 882.023438 C 416.742188 886.195312 411.136719 888.515625 405.238281 888.515625 C 394.058594 888.515625 384.605469 880.175781 383.234375 869.09375 C 383.121094 868.183594 383.066406 867.265625 383.066406 866.347656 C 383.066406 865.429688 383.121094 864.511719 383.234375 863.601562 C 384.605469 852.519531 394.058594 844.179688 405.238281 844.179688 C 416.414062 844.179688 425.867188 852.519531 427.238281 863.601562 C 427.351562 864.511719 427.40625 865.429688 427.40625 866.347656 C 427.40625 867.265625 427.351562 868.183594 427.238281 869.09375 L 427.078125 870.378906 Z M 418.757812 862.316406 C 417.003906 856.414062 411.535156 852.246094 405.238281 852.246094 C 398.941406 852.246094 393.46875 856.414062 391.71875 862.316406 Z M 418.757812 862.316406  M 566.542969 851.921875 C 569.996094 847.613281 575.230469 845.027344 580.847656 845.027344 C 590.9375 845.027344 599.183594 853.277344 599.183594 863.367188 L 599.183594 887.949219 L 591.117188 887.949219 L 591.117188 863.367188 C 591.117188 857.71875 586.492188 853.09375 580.847656 853.09375 C 575.199219 853.09375 570.574219 857.71875 570.574219 863.367188 L 570.574219 887.949219 L 562.507812 887.949219 L 562.507812 863.367188 C 562.507812 857.71875 557.882812 853.09375 552.238281 853.09375 C 546.589844 853.09375 541.964844 857.71875 541.964844 863.367188 L 541.964844 887.949219 L 533.898438 887.949219 L 533.898438 863.367188 C 533.898438 853.277344 542.148438 845.027344 552.238281 845.027344 C 557.851562 845.027344 563.089844 847.613281 566.542969 851.921875  M 349.558594 844.488281 C 350.46875 844.375 351.386719 844.320312 352.304688 844.320312 C 353.222656 844.320312 354.140625 844.375 355.050781 844.488281 C 359.359375 845.019531 363.253906 846.777344 366.40625 849.378906 L 366.40625 832.234375 L 374.472656 832.234375 L 374.472656 866.488281 C 374.472656 877.664062 366.132812 887.117188 355.050781 888.488281 C 354.140625 888.601562 353.222656 888.65625 352.304688 888.65625 C 351.386719 888.65625 350.46875 888.601562 349.558594 888.488281 C 338.472656 887.117188 330.136719 877.664062 330.136719 866.488281 C 330.136719 855.3125 338.472656 845.859375 349.558594 844.488281 M 354.800781 852.605469 L 354.628906 852.578125 C 353.859375 852.449219 353.082031 852.386719 352.304688 852.386719 C 351.523438 852.386719 350.746094 852.449219 349.976562 852.578125 C 343.1875 853.703125 338.199219 859.601562 338.199219 866.488281 C 338.199219 873.3125 343.101562 879.167969 349.792969 880.367188 L 349.976562 880.398438 C 350.746094 880.523438 351.523438 880.589844 352.304688 880.589844 C 353.082031 880.589844 353.859375 880.523438 354.628906 880.398438 C 361.417969 879.273438 366.40625 873.375 366.40625 866.488281 C 366.40625 859.660156 361.5 853.800781 354.800781 852.605469  M 615.515625 870.378906 C 617.265625 876.28125 622.738281 880.449219 629.03125 880.449219 C 632.785156 880.449219 636.351562 878.972656 639.003906 876.320312 L 640.042969 875.285156 L 645.746094 880.988281 L 644.707031 882.023438 C 640.539062 886.195312 634.929688 888.515625 629.03125 888.515625 C 617.855469 888.515625 608.402344 880.175781 607.03125 869.09375 C 606.917969 868.183594 606.863281 867.265625 606.863281 866.347656 C 606.863281 865.429688 606.917969 864.511719 607.03125 863.601562 C 608.402344 852.519531 617.855469 844.179688 629.03125 844.179688 C 640.210938 844.179688 649.664062 852.519531 651.03125 863.601562 C 651.144531 864.511719 651.203125 865.429688 651.203125 866.347656 C 651.203125 867.265625 651.144531 868.183594 651.03125 869.09375 L 650.875 870.378906 Z M 642.554688 862.316406 C 640.800781 856.414062 635.328125 852.246094 629.03125 852.246094 C 622.734375 852.246094 617.265625 856.414062 615.515625 862.316406 Z M 642.554688 862.316406  M 677.839844 844.488281 C 678.75 844.375 679.667969 844.320312 680.585938 844.320312 C 681.503906 844.320312 682.421875 844.375 683.332031 844.488281 C 687.640625 845.019531 691.535156 846.777344 694.6875 849.378906 L 694.6875 832.234375 L 702.753906 832.234375 L 702.753906 866.488281 C 702.753906 877.664062 694.414062 887.117188 683.332031 888.488281 C 682.421875 888.601562 681.503906 888.65625 680.585938 888.65625 C 679.667969 888.65625 678.75 888.601562 677.839844 888.488281 C 666.753906 887.117188 658.414062 877.664062 658.414062 866.488281 C 658.414062 855.3125 666.753906 845.859375 677.839844 844.488281 M 683.082031 852.605469 L 682.910156 852.578125 C 682.140625 852.449219 681.363281 852.386719 680.585938 852.386719 C 679.804688 852.386719 679.027344 852.449219 678.257812 852.578125 C 671.46875 853.703125 666.480469 859.601562 666.480469 866.488281 C 666.480469 873.3125 671.382812 879.167969 678.078125 880.367188 L 678.257812 880.398438 C 679.027344 880.523438 679.804688 880.589844 680.585938 880.589844 C 681.363281 880.589844 682.140625 880.523438 682.910156 880.398438 C 689.699219 879.273438 694.6875 873.375 694.6875 866.488281 C 694.6875 859.660156 689.78125 853.800781 683.082031 852.605469  M 500.003906 844.488281 C 500.917969 844.375 501.832031 844.320312 502.75 844.320312 C 503.667969 844.320312 504.585938 844.375 505.5 844.488281 C 516.582031 845.859375 524.921875 855.3125 524.921875 866.488281 L 524.921875 887.949219 L 516.855469 887.949219 L 516.855469 883.597656 C 513.703125 886.199219 509.808594 887.957031 505.5 888.488281 C 504.585938 888.601562 503.667969 888.65625 502.75 888.65625 C 501.832031 888.65625 500.917969 888.601562 500.003906 888.488281 C 488.921875 887.117188 480.582031 877.664062 480.582031 866.488281 C 480.582031 855.3125 488.921875 845.859375 500.003906 844.488281 M 505.25 852.605469 L 505.078125 852.578125 C 504.308594 852.449219 503.53125 852.386719 502.75 852.386719 C 501.972656 852.386719 501.195312 852.449219 500.425781 852.578125 C 493.636719 853.703125 488.648438 859.601562 488.648438 866.488281 C 488.648438 873.3125 493.546875 879.167969 500.242188 880.367188 L 500.425781 880.398438 C 501.195312 880.523438 501.972656 880.589844 502.75 880.589844 C 503.53125 880.589844 504.308594 880.523438 505.078125 880.398438 C 511.867188 879.273438 516.851562 873.375 516.851562 866.488281 C 516.851562 859.660156 511.949219 853.800781 505.25 852.605469 '/%3E%3C/svg%3E");background-repeat:repeat-x;background-size:auto 13px;background-position:18px center;
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 -1px 0 rgba(0,0,0,.25) inset}
+.tape::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.12),transparent 45%,rgba(0,0,0,.12))}
+.stage{position:relative;padding:76px clamp(16px,4vw,44px) 26px;display:grid;place-items:center;gap:12px;min-height:300px}
+.stage .label{box-shadow:0 1px 0 rgba(0,0,0,.08),0 12px 26px rgba(60,35,10,.32);max-width:100%;border-radius:2px}
+.stage-cap{font-size:12.5px;color:var(--kraft-ink);font-weight:600;text-align:center}
+.stage-empty{color:var(--kraft-ink);text-align:center;max-width:380px}
+.stage-empty b{display:block;font-family:var(--head);font-size:17px;margin-bottom:4px}
+
+.queue{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.queue-head{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.queue-head h2{margin:0;font-size:15px}
+.queue-head span{margin-left:auto;font-size:12px;color:var(--muted)}
+.qwrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-family:var(--head);font-size:11.5px;font-weight:600;color:var(--muted);padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--field)}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:last-child td{border-bottom:0}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--hover)}
+tbody tr.cur{background:var(--sel);box-shadow:inset 3px 0 0 var(--navy)}
+:root[data-theme="dark"] tbody tr.cur{box-shadow:inset 3px 0 0 var(--sky)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) tbody tr.cur{box-shadow:inset 3px 0 0 var(--sky)}}
+td .pn{font-family:var(--head);font-weight:600;font-size:13px}
+td .ps{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+td.code{font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:.02em}
+td.code small{display:block;font-size:11.5px;color:var(--muted);letter-spacing:0}
+td .warn{display:inline-block;font-size:11.5px;font-weight:600;color:var(--alert);background:var(--alert-bg);border-radius:6px;padding:1px 7px;margin-top:4px}
+td.qty input{width:80px;padding:5px 6px;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+td.rm button{border:0;background:none;color:var(--muted);font-size:18px;line-height:1;padding:4px 8px;border-radius:6px}
+td.rm button:hover{background:var(--alert-bg);color:var(--alert)}
+.qempty{padding:28px 16px;text-align:center;color:var(--muted);font-size:14px;margin:0}
+
+/* diálogos */
+dialog{border:0;border-radius:14px;padding:0;width:min(520px,calc(100vw - 32px));background:var(--panel);color:var(--ink);box-shadow:0 24px 64px rgba(0,0,0,.3);overflow:hidden}
+dialog::backdrop{background:rgba(22,33,59,.55)}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:var(--navy);color:#fff;border-bottom:3px solid var(--red)}
+.dlg-head h2{margin:0;font-size:16px}
+.dlg-head .btn{background:transparent;border-color:rgba(255,255,255,.4);color:#fff}
+.dlg-head .btn:hover{background:rgba(255,255,255,.1)}
+.dlg-body{padding:6px 20px 20px;max-height:70vh;overflow:auto}
+.dlg-body h3{font-size:13.5px;margin:18px 0 6px}
+label.f{display:block;font-family:var(--head);font-size:12.5px;font-weight:600;margin:12px 0 4px}
+.chk{display:flex;gap:8px;align-items:center;font-size:13.5px;margin-top:12px;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--navy)}
+.hint{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.tips{font-size:13px;color:var(--muted);margin:0;padding-left:18px}
+.tips li{margin:2px 0}
+.zst{display:flex;gap:10px;align-items:center;font-family:var(--head);font-size:13.5px;font-weight:600;padding:12px 14px;border-radius:10px;background:var(--field);border:1px solid var(--line);margin:16px 0 4px}
+.zst .dot{width:10px;height:10px;border-radius:50%;background:var(--muted);flex:none}
+.zst.ok .dot{background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 20%,transparent)}
+.zst.err .dot{background:var(--alert)}
+
+/* etiqueta: fonte padrão logística (Helvetica/Arial) */
+.label{background:#fff;color:#000;display:flex;flex-direction:column;overflow:hidden;font-family:var(--label-font)}
+.l-name{font-weight:700;line-height:1.08;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.l-sku{display:flex;align-items:baseline;font-weight:700}
+.l-sku i{font-style:normal;font-weight:700}
+.l-rule{background:#000;flex:none}
+.l-bar{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.l-bar svg{width:100%;height:100%;display:block}
+.l-none{flex:1;display:flex;align-items:center;justify-content:center;font-weight:700;border:1px dashed #999;color:#777}
+.l-foot{text-align:center;font-weight:400}
+
+#print-area{display:none}
+@media print{
+  :root{padding:0!important}
+  html,body{margin:0!important;padding:0!important;background:#fff!important}
+  body > *:not(#print-area){display:none!important}
+  #print-area{display:block}
+  #print-area .label{break-after:page;page-break-after:always}
+  #print-area .label:last-child{break-after:auto;page-break-after:auto}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <svg class="logo" role="img" aria-label="Dellamed" xmlns="http://www.w3.org/2000/svg" viewBox="240 809 464 103"><path fill="currentColor" d="M 282.449219 832.714844 L 293.277344 821.886719 C 284.246094 814.304688 272.953125 810.171875 261.019531 810.171875 L 240.511719 810.171875 L 240.511719 825.382812 L 261.019531 825.382812 C 269.085938 825.382812 276.519531 828.121094 282.449219 832.714844  M 282.449219 888.175781 C 276.519531 892.769531 269.085938 895.507812 261.019531 895.507812 L 240.511719 895.507812 L 240.511719 910.71875 L 261.019531 910.71875 C 272.953125 910.71875 284.246094 906.585938 293.277344 899.003906 Z M 282.449219 888.175781  M 290.078125 880.046875 L 300.984375 890.953125 C 307.667969 882.230469 311.292969 871.617188 311.292969 860.445312 C 311.292969 849.273438 307.667969 838.65625 300.984375 829.9375 L 290.078125 840.84375 C 293.867188 846.445312 296.082031 853.191406 296.082031 860.445312 C 296.082031 867.699219 293.867188 874.445312 290.078125 880.046875  M 240.511719 836.46875 L 259.28125 836.46875 C 272.523438 836.46875 283.257812 847.203125 283.257812 860.445312 C 283.257812 873.6875 272.523438 884.421875 259.28125 884.421875 L 240.511719 884.421875  M 444.175781 872.808594 L 444.175781 832.375 L 436.148438 832.375 L 436.148438 873.273438 C 436.148438 881.34375 442.75 887.945312 450.820312 887.945312 L 451.167969 887.945312 L 451.167969 879.992188 C 447.304688 879.886719 444.175781 876.695312 444.175781 872.808594  M 467.398438 872.808594 L 467.398438 832.375 L 459.371094 832.375 L 459.371094 873.273438 C 459.371094 881.34375 465.972656 887.945312 474.042969 887.945312 L 474.386719 887.945312 L 474.386719 879.992188 C 470.523438 879.886719 467.398438 876.695312 467.398438 872.808594  M 391.71875 870.378906 C 393.472656 876.28125 398.941406 880.449219 405.238281 880.449219 C 408.992188 880.449219 412.554688 878.972656 415.210938 876.320312 L 416.246094 875.285156 L 421.949219 880.988281 L 420.910156 882.023438 C 416.742188 886.195312 411.136719 888.515625 405.238281 888.515625 C 394.058594 888.515625 384.605469 880.175781 383.234375 869.09375 C 383.121094 868.183594 383.066406 867.265625 383.066406 866.347656 C 383.066406 865.429688 383.121094 864.511719 383.234375 863.601562 C 384.605469 852.519531 394.058594 844.179688 405.238281 844.179688 C 416.414062 844.179688 425.867188 852.519531 427.238281 863.601562 C 427.351562 864.511719 427.40625 865.429688 427.40625 866.347656 C 427.40625 867.265625 427.351562 868.183594 427.238281 869.09375 L 427.078125 870.378906 Z M 418.757812 862.316406 C 417.003906 856.414062 411.535156 852.246094 405.238281 852.246094 C 398.941406 852.246094 393.46875 856.414062 391.71875 862.316406 Z M 418.757812 862.316406  M 566.542969 851.921875 C 569.996094 847.613281 575.230469 845.027344 580.847656 845.027344 C 590.9375 845.027344 599.183594 853.277344 599.183594 863.367188 L 599.183594 887.949219 L 591.117188 887.949219 L 591.117188 863.367188 C 591.117188 857.71875 586.492188 853.09375 580.847656 853.09375 C 575.199219 853.09375 570.574219 857.71875 570.574219 863.367188 L 570.574219 887.949219 L 562.507812 887.949219 L 562.507812 863.367188 C 562.507812 857.71875 557.882812 853.09375 552.238281 853.09375 C 546.589844 853.09375 541.964844 857.71875 541.964844 863.367188 L 541.964844 887.949219 L 533.898438 887.949219 L 533.898438 863.367188 C 533.898438 853.277344 542.148438 845.027344 552.238281 845.027344 C 557.851562 845.027344 563.089844 847.613281 566.542969 851.921875  M 349.558594 844.488281 C 350.46875 844.375 351.386719 844.320312 352.304688 844.320312 C 353.222656 844.320312 354.140625 844.375 355.050781 844.488281 C 359.359375 845.019531 363.253906 846.777344 366.40625 849.378906 L 366.40625 832.234375 L 374.472656 832.234375 L 374.472656 866.488281 C 374.472656 877.664062 366.132812 887.117188 355.050781 888.488281 C 354.140625 888.601562 353.222656 888.65625 352.304688 888.65625 C 351.386719 888.65625 350.46875 888.601562 349.558594 888.488281 C 338.472656 887.117188 330.136719 877.664062 330.136719 866.488281 C 330.136719 855.3125 338.472656 845.859375 349.558594 844.488281 M 354.800781 852.605469 L 354.628906 852.578125 C 353.859375 852.449219 353.082031 852.386719 352.304688 852.386719 C 351.523438 852.386719 350.746094 852.449219 349.976562 852.578125 C 343.1875 853.703125 338.199219 859.601562 338.199219 866.488281 C 338.199219 873.3125 343.101562 879.167969 349.792969 880.367188 L 349.976562 880.398438 C 350.746094 880.523438 351.523438 880.589844 352.304688 880.589844 C 353.082031 880.589844 353.859375 880.523438 354.628906 880.398438 C 361.417969 879.273438 366.40625 873.375 366.40625 866.488281 C 366.40625 859.660156 361.5 853.800781 354.800781 852.605469  M 615.515625 870.378906 C 617.265625 876.28125 622.738281 880.449219 629.03125 880.449219 C 632.785156 880.449219 636.351562 878.972656 639.003906 876.320312 L 640.042969 875.285156 L 645.746094 880.988281 L 644.707031 882.023438 C 640.539062 886.195312 634.929688 888.515625 629.03125 888.515625 C 617.855469 888.515625 608.402344 880.175781 607.03125 869.09375 C 606.917969 868.183594 606.863281 867.265625 606.863281 866.347656 C 606.863281 865.429688 606.917969 864.511719 607.03125 863.601562 C 608.402344 852.519531 617.855469 844.179688 629.03125 844.179688 C 640.210938 844.179688 649.664062 852.519531 651.03125 863.601562 C 651.144531 864.511719 651.203125 865.429688 651.203125 866.347656 C 651.203125 867.265625 651.144531 868.183594 651.03125 869.09375 L 650.875 870.378906 Z M 642.554688 862.316406 C 640.800781 856.414062 635.328125 852.246094 629.03125 852.246094 C 622.734375 852.246094 617.265625 856.414062 615.515625 862.316406 Z M 642.554688 862.316406  M 677.839844 844.488281 C 678.75 844.375 679.667969 844.320312 680.585938 844.320312 C 681.503906 844.320312 682.421875 844.375 683.332031 844.488281 C 687.640625 845.019531 691.535156 846.777344 694.6875 849.378906 L 694.6875 832.234375 L 702.753906 832.234375 L 702.753906 866.488281 C 702.753906 877.664062 694.414062 887.117188 683.332031 888.488281 C 682.421875 888.601562 681.503906 888.65625 680.585938 888.65625 C 679.667969 888.65625 678.75 888.601562 677.839844 888.488281 C 666.753906 887.117188 658.414062 877.664062 658.414062 866.488281 C 658.414062 855.3125 666.753906 845.859375 677.839844 844.488281 M 683.082031 852.605469 L 682.910156 852.578125 C 682.140625 852.449219 681.363281 852.386719 680.585938 852.386719 C 679.804688 852.386719 679.027344 852.449219 678.257812 852.578125 C 671.46875 853.703125 666.480469 859.601562 666.480469 866.488281 C 666.480469 873.3125 671.382812 879.167969 678.078125 880.367188 L 678.257812 880.398438 C 679.027344 880.523438 679.804688 880.589844 680.585938 880.589844 C 681.363281 880.589844 682.140625 880.523438 682.910156 880.398438 C 689.699219 879.273438 694.6875 873.375 694.6875 866.488281 C 694.6875 859.660156 689.78125 853.800781 683.082031 852.605469  M 500.003906 844.488281 C 500.917969 844.375 501.832031 844.320312 502.75 844.320312 C 503.667969 844.320312 504.585938 844.375 505.5 844.488281 C 516.582031 845.859375 524.921875 855.3125 524.921875 866.488281 L 524.921875 887.949219 L 516.855469 887.949219 L 516.855469 883.597656 C 513.703125 886.199219 509.808594 887.957031 505.5 888.488281 C 504.585938 888.601562 503.667969 888.65625 502.75 888.65625 C 501.832031 888.65625 500.917969 888.601562 500.003906 888.488281 C 488.921875 887.117188 480.582031 877.664062 480.582031 866.488281 C 480.582031 855.3125 488.921875 845.859375 500.003906 844.488281 M 505.25 852.605469 L 505.078125 852.578125 C 504.308594 852.449219 503.53125 852.386719 502.75 852.386719 C 501.972656 852.386719 501.195312 852.449219 500.425781 852.578125 C 493.636719 853.703125 488.648438 859.601562 488.648438 866.488281 C 488.648438 873.3125 493.546875 879.167969 500.242188 880.367188 L 500.425781 880.398438 C 501.195312 880.523438 501.972656 880.589844 502.75 880.589844 C 503.53125 880.589844 504.308594 880.523438 505.078125 880.398438 C 511.867188 879.273438 516.851562 873.375 516.851562 866.488281 C 516.851562 859.660156 511.949219 853.800781 505.25 852.605469 "/></svg>
+  <span class="sep" aria-hidden="true"></span>
+  <div>
+    <h1>Etiquetas logísticas</h1>
+    <p>Expedição · etiqueta térmica com nome, SKU e código de barras</p>
+  </div>
+  <div class="spec">
+    <span class="pill"><i></i>100 × 50 mm</span>
+    <button class="btn-ghost" id="openSettings">Ajustes</button>
+  </div>
+</header>
+
+<div class="dock" role="region" aria-label="Resumo do lote e impressão">
+  <div class="count"><b id="sTotal">0</b><span>etiquetas no lote</span></div>
+  <div class="count"><b id="sProd">0</b><span>produtos</span></div>
+  <div class="count warn" id="sWarnWrap" hidden><b id="sWarn">0</b><span>para conferir</span></div>
+  <div class="actions">
+    <span class="step" aria-hidden="true">3</span><span class="steplbl">Imprima</span>
+    <details class="menu" id="expMenu">
+      <summary class="btn" role="button">Exportar arquivo</summary>
+      <div class="menu-pop">
+        <button data-exp="pdf"><b>PDF</b><span>Uma etiqueta por página, 100 × 50 mm</span></button>
+        <button data-exp="zpl"><b>ZPL</b><span>Arquivo de comandos para impressora Zebra</span></button>
+        <button data-exp="xlsx"><b>Excel</b><span>Base para BarTender, ZebraDesigner ou Argox</span></button>
+        <button data-exp="csv"><b>CSV</b><span>A mesma base em texto</span></button>
+        <button data-exp="png"><b>Imagens PNG</b><span>Uma imagem por produto, em .zip</span></button>
+        <div class="dpi">Resolução da térmica (ZPL e PNG)
+          <select id="dpi"><option value="203">203 dpi</option><option value="300">300 dpi</option></select>
+        </div>
+      </div>
+    </details>
+    <button class="btn" id="printBtn" disabled>Imprimir</button>
+    <button class="btn primary big" id="zebraBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg>Imprimir na Zebra</button>
+  </div>
+  <div class="msg" id="msg"></div>
+</div>
+
+<main class="app">
+  <aside class="picker" aria-label="Catálogo de produtos">
+    <div class="picker-head">
+      <div class="sec-title"><span class="step" aria-hidden="true">1</span><h2>Separe os produtos</h2><small id="pCount"></small></div>
+      <select id="grp" aria-label="Filtrar por grupo"><option value="">Todos os grupos</option></select>
+      <input type="search" id="q" placeholder="Buscar por nome ou SKU">
+    </div>
+    <div class="plist" id="plist"></div>
+    <div class="picker-foot">
+      <details class="paste" open>
+        <summary>Colar lista de SKU e quantidade</summary>
+        <textarea id="qtyPaste" placeholder="05589	150&#10;05590	154"></textarea>
+        <div class="row-btns" style="margin-top:8px">
+          <button class="btn navy" id="useQty">Adicionar ao lote</button>
+          <button class="btn" id="clearQty">Limpar lote</button>
+        </div>
+      </details>
+    </div>
+  </aside>
+
+  <section class="work" aria-label="Conferência">
+    <div class="sec-title" style="margin:0"><span class="step" aria-hidden="true">2</span><h2>Confira antes de imprimir</h2></div>
+    <div class="box">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="stage" id="stage"></div>
+    </div>
+
+    <div class="queue">
+      <div class="queue-head"><h2>Romaneio de impressão</h2><span>Clique em uma linha para ver a etiqueta</span></div>
+      <div class="qwrap" id="queue"></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="zebraDlg">
+  <div class="dlg-head"><h2>Imprimir na Zebra</h2><button class="btn" id="closeZebra">Fechar</button></div>
+  <div class="dlg-body">
+    <div class="zst" id="zStatus"><span class="dot"></span><span id="zStatusTxt">Procurando o Zebra Browser Print neste computador</span></div>
+    <div id="zReady" hidden>
+      <label class="f" for="zPrinter">Impressora</label>
+      <select id="zPrinter"></select>
+      <label class="f" for="zDpi">Resolução da impressora</label>
+      <select id="zDpi"><option value="203">203 dpi (8 pontos/mm)</option><option value="300">300 dpi (12 pontos/mm)</option></select>
+      <p class="hint">Está na etiqueta de identificação da impressora. Resolução errada imprime a etiqueta no tamanho errado.</p>
+      <div class="row-btns" style="margin-top:16px">
+        <button class="btn" id="zTest">Testar 1 etiqueta</button>
+        <button class="btn primary" id="zSend">Imprimir lote</button>
+      </div>
+      <p class="hint" id="zMsg"></p>
+    </div>
+    <div id="zHelp" hidden>
+      <h3>Para imprimir direto, este computador precisa de:</h3>
+      <ul class="tips">
+        <li>Zebra Browser Print instalado e aberto (gratuito, no site da Zebra).</li>
+        <li>Impressora Zebra ligada, com o driver instalado.</li>
+        <li>Na primeira vez, permitir o acesso desta página no aviso do Browser Print e, se o navegador pedir, o acesso à rede local.</li>
+      </ul>
+      <p class="hint">Abra esta página no computador ligado à impressora. Enquanto isso, o PDF imprime normalmente pelo driver da Zebra.</p>
+      <div class="row-btns" style="margin-top:12px"><button class="btn" id="zRetry">Tentar de novo</button></div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="settings">
+  <div class="dlg-head"><h2>Ajustes</h2><button class="btn" id="closeSettings">Fechar</button></div>
+  <div class="dlg-body">
+    <h3>Etiqueta</h3>
+    <label class="f" for="codeType">Código de barras impresso</label>
+    <select id="codeType">
+      <option value="ean">EAN-13 (produto)</option>
+      <option value="dun">DUN-14 (caixa master)</option>
+    </select>
+    <label class="f" for="footer">Texto fixo no rodapé (opcional)</label>
+    <input type="text" id="footer" placeholder="Ex.: Fabricado no Brasil">
+    <label class="chk"><input type="checkbox" id="allowNoCode" checked> Imprimir mesmo sem código de barras</label>
+
+    <h3>Corrigir um código neste computador</h3>
+    <p class="hint" style="margin-top:0">Cole SKU, Produto, EAN e DUN com cabeçalho. A correção vale só neste navegador; para todos, corrija o produtos.json no GitHub.</p>
+    <textarea id="codes" placeholder="SKU	Produto	EAN	DUN" style="margin-top:8px"></textarea>
+    <div class="row-btns" style="margin-top:8px">
+      <button class="btn" id="useCodes">Salvar códigos</button>
+      <label class="btn">Subir planilha<input type="file" id="codeFile" accept=".xlsx,.xls,.csv,.ods" hidden></label>
+    </div>
+
+    <h3>Imprimindo pelo navegador</h3>
+    <ul class="tips">
+      <li>Escolha a impressora térmica e o papel 100 × 50 mm.</li>
+      <li>Margens: nenhuma. Escala: 100%.</li>
+      <li>Desmarque cabeçalhos e rodapés do navegador.</li>
+    </ul>
+  </div>
+</dialog>
+
+<div id="print-area"></div>
+
+<script>
+fetch('produtos.json',{cache:'no-store'}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(DATA=>{
+  const PRODUCTS = DATA.map((d,i)=>({id:i,g:d.grupo||'',sku:String(d.sku||''),nome:d.nome||'',medida:d.medida_caixa||'',ean:String(d.ean||''),dun:String(d.dun||''),mq:String(d.qtd_master||''),mmed:d.medida_master||'',nota:''}));
+
+  const W=100, H=50, M=3.5;
+  const $ = id => document.getElementById(id);
+  const KEY='dm-etq-v5', CODES='dm-etiquetas-codigos-v4';
+  const S={footer:'',allowNoCode:true,codeType:'ean',dpi:'203'};
+  try{ Object.assign(S, JSON.parse(localStorage.getItem(KEY)||'{}')); }catch(e){}
+  let custom={}; try{ custom = JSON.parse(localStorage.getItem(CODES)||'{}'); }catch(e){}
+  const save=()=>{ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} };
+  const saveCodes=()=>{ try{ localStorage.setItem(CODES, JSON.stringify(custom)); }catch(e){} };
+  const qty={}; let cur=null, q='', grp='';
+
+  const norm = s => String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9]/g,'');
+  const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const byKey={}, bySku={};
+  PRODUCTS.forEach(p=>{ byKey[norm(p.nome)] = byKey[norm(p.nome)] || p; if(p.sku) bySku[p.sku.replace(/^0+/,'')] = p; });
+  const pkey = p => p.sku || norm(p.nome);
+  const codeOf = p => { const c=custom[pkey(p)]||{}; return {ean:c.ean||p.ean, dun:c.dun||p.dun}; };
+  const GROUPS = [...new Set(PRODUCTS.map(p=>p.g))];
+  const dimsOf = t => (String(t||'').match(/\d+(?:,\d+)?/g)||[]).map(x=>parseFloat(x.replace(',','.'))).sort((a,b)=>b-a);
+  const boxOf = p => (S.codeType==='dun' && p.mmed && p.mq && p.mq!=='1') ? p.mmed : p.medida;
+  const fits = p => { const d=dimsOf(boxOf(p)); return d.length<2 ? null : (d[0]>=W/10 && d[1]>=H/10); };
+  function msg(t, err){ const m=$('msg'); m.textContent=t||''; m.classList.toggle('err', !!err); }
+
+  // ---------- código de barras ----------
+  function gtinOk(s){ const d=s.split('').map(Number), ch=d.pop(); let sum=0; d.reverse().forEach((n,i)=> sum+=n*(i%2===0?3:1)); return (10-sum%10)%10===ch; }
+  function spec(p){
+    const c=codeOf(p), raw = S.codeType==='dun'? c.dun : c.ean, lab = S.codeType==='dun'? 'DUN':'EAN';
+    if(!raw) return {err:'Sem '+lab+' cadastrado'};
+    const d=String(raw).replace(/\D/g,'');
+    if(d.length===14) return gtinOk(d)? {format:'ITF14',value:d}:{err:lab+' com dígito verificador errado'};
+    if(d.length===13) return gtinOk(d)? {format:'EAN13',value:d}:{err:lab+' com dígito verificador errado'};
+    if(d.length===8) return gtinOk(d)? {format:'EAN8',value:d}:{err:lab+' com dígito verificador errado'};
+    if(d.length===12) return {err:lab+' com 12 dígitos: confira o zero inicial'};
+    return {format:'CODE128',value:String(raw)};
+  }
+  const fmtName = sp => sp.format==='ITF14'?'DUN-14':sp.format==='EAN13'?'EAN-13':sp.format==='EAN8'?'EAN-8':'Code 128';
+  const cache=new Map();
+  function barcodeSvg(sp){
+    const k=sp.format+sp.value;
+    if(!cache.has(k)){
+      const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+      try{ JsBarcode(svg, sp.value, {format:sp.format,width:2,height:80,fontSize:18,margin:10,textMargin:2,font:'Helvetica, Arial, sans-serif',fontOptions:'bold',background:'#ffffff',lineColor:'#000000'}); }catch(e){ return null; }
+      const w=parseFloat(svg.getAttribute('width')), h=parseFloat(svg.getAttribute('height'));
+      svg.setAttribute('viewBox',`0 0 ${w} ${h}`); svg.removeAttribute('width'); svg.removeAttribute('height'); svg.removeAttribute('style');
+      svg.setAttribute('preserveAspectRatio','xMidYMid meet'); cache.set(k,svg);
+    }
+    return cache.get(k).cloneNode(true);
+  }
+  function barcodeCanvas(sp, scale){
+    const c=document.createElement('canvas');
+    JsBarcode(c, sp.value, {format:sp.format,width:2*scale,height:80*scale,fontSize:18*scale,margin:10*scale,textMargin:2*scale,font:'Helvetica, Arial, sans-serif',fontOptions:'bold',background:'#ffffff',lineColor:'#000000'});
+    return c;
+  }
+
+  // ---------- etiqueta (medidas em mm, u = escala) ----------
+  function labelEl(p, sp, u=1){
+    const mm = v => (v*u)+'mm';
+    const el=document.createElement('div'); el.className='label';
+    el.style.width=mm(W); el.style.height=mm(H); el.style.padding=mm(M);
+    const n=document.createElement('div'); n.className='l-name'; n.style.fontSize=mm(4.2); n.textContent=p.nome; el.appendChild(n);
+    if(p.sku){
+      const k=document.createElement('div'); k.className='l-sku'; k.style.marginTop=mm(.9); k.style.gap=mm(1.4);
+      k.innerHTML='<i style="font-size:'+mm(2.6)+'">SKU</i><span style="font-size:'+mm(5.4)+';line-height:1">'+esc(p.sku)+'</span>';
+      el.appendChild(k);
+    }
+    const r=document.createElement('div'); r.className='l-rule'; r.style.height=mm(.4); r.style.margin=mm(1.2)+' 0 '+mm(.6); el.appendChild(r);
+    const svg = sp.err? null : barcodeSvg(sp);
+    if(svg){ const b=document.createElement('div'); b.className='l-bar'; b.appendChild(svg); el.appendChild(b); }
+    else { const b=document.createElement('div'); b.className='l-none'; b.style.fontSize=mm(3); b.textContent='Sem código de barras'; el.appendChild(b); }
+    if(S.footer){ const f=document.createElement('div'); f.className='l-foot'; f.style.fontSize=mm(2.5); f.style.marginTop=mm(.6); f.textContent=S.footer; el.appendChild(f); }
+    return el;
+  }
+
+  // ---------- seleção ----------
+  const selected = () => PRODUCTS.filter(p=>qty[p.id]).map(p=>({p, n:qty[p.id], sp:spec(p)}));
+  const printable = it => !it.sp.err || S.allowNoCode;
+  const issues = it => { const a=[]; if(it.sp.err) a.push(it.sp.err); if(fits(it.p)===false) a.push('Caixa menor que a etiqueta ('+boxOf(it.p)+')'); if(it.p.nota) a.push(it.p.nota); return a; };
+
+  function renderList(){
+    const qq=norm(q);
+    const items=PRODUCTS.filter(p=> (!grp || p.g===grp) && (!qq || norm(p.nome).includes(qq) || norm(p.sku).includes(qq)));
+    $('plist').innerHTML = items.map(p=>{
+      const c=codeOf(p), has = S.codeType==='dun'? c.dun : c.ean;
+      return `<div class="prow${qty[p.id]?' on':''}">
+        <div><div class="n">${esc(p.nome)}</div><div class="s">SKU ${esc(p.sku||'sem SKU')}</div>${has?'':'<div class="w">Sem '+(S.codeType==='dun'?'DUN':'EAN')+'</div>'}</div>
+        <input type="number" min="0" max="9999" inputmode="numeric" aria-label="Quantidade de ${esc(p.nome)}" data-id="${p.id}" value="${qty[p.id]||''}" placeholder="0">
+      </div>`;
+    }).join('') || '<p class="qempty">Nenhum produto com esse nome ou SKU.</p>';
+    $('pCount').textContent = items.length===PRODUCTS.length ? PRODUCTS.length+' no catálogo' : items.length+' de '+PRODUCTS.length;
+  }
+  function setQty(id, v, from){
+    v=Math.max(0, parseInt(v,10)||0);
+    if(v){ qty[id]=v; if(cur===null) cur=+id; } else { delete qty[id]; if(cur===+id) cur=null; }
+    if(from!=='list') renderList(); else { const row=document.querySelector('.prow input[data-id="'+id+'"]'); if(row) row.closest('.prow').classList.toggle('on',!!v); }
+    render(from);
+  }
+  $('plist').addEventListener('input', e=>{ if(e.target.dataset.id) setQty(e.target.dataset.id, e.target.value, 'list'); });
+  $('q').addEventListener('input', e=>{ q=e.target.value; renderList(); });
+  $('grp').innerHTML += GROUPS.map(g=>`<option>${esc(g)}</option>`).join('');
+  $('grp').addEventListener('change', e=>{ grp=e.target.value; renderList(); });
+
+  function render(from){
+    const list=selected();
+    if(cur!==null && !qty[cur]) cur=null;
+    if(cur===null && list.length) cur=list[0].p.id;
+    // palco
+    const st=$('stage'); st.innerHTML='';
+    const it = list.find(i=>i.p.id===cur);
+    if(it){
+      const u = Math.min(1.7, Math.max(.8, (st.clientWidth-60)/ (W*3.78)));
+      st.appendChild(labelEl(it.p, it.sp, u));
+      const c=document.createElement('div'); c.className='stage-cap'; c.textContent=it.p.nome+' · '+it.n.toLocaleString('pt-BR')+' cópia'+(it.n>1?'s':'')+' · prévia ampliada, impressão em 100 × 50 mm'; st.appendChild(c);
+    } else {
+      st.innerHTML='<div class="stage-empty"><b>Lote vazio</b>Digite a quantidade ao lado de cada produto ou cole a lista de SKUs e quantidades. A etiqueta aparece aqui para conferência.</div>';
+    }
+    // fila
+    if(from!=='queue'){
+      if(!list.length){ $('queue').innerHTML='<p class="qempty">Nenhum produto no lote ainda.</p>'; }
+      else {
+        $('queue').innerHTML='<table><thead><tr><th>Produto</th><th>Código de barras</th><th>Etiquetas</th><th><span class="sr" style="position:absolute;left:-9999px">Remover</span></th></tr></thead><tbody>'+
+          list.map(i=>{ const is=issues(i); return `<tr data-id="${i.p.id}" class="${i.p.id===cur?'cur':''}">
+            <td><div class="pn">${esc(i.p.nome)}</div><div class="ps">SKU ${esc(i.p.sku||'—')}</div>${is.map(x=>'<span class="warn">'+esc(x)+'</span> ').join('')}</td>
+            <td class="code">${i.sp.err? '—' : esc(i.sp.value)+'<small>'+fmtName(i.sp)+'</small>'}</td>
+            <td class="qty"><input type="number" min="0" max="9999" value="${i.n}" data-q="${i.p.id}" aria-label="Etiquetas de ${esc(i.p.nome)}"></td>
+            <td class="rm"><button data-rm="${i.p.id}" aria-label="Remover ${esc(i.p.nome)}">×</button></td></tr>`; }).join('')+'</tbody></table>';
+      }
+    } else {
+      document.querySelectorAll('#queue tr[data-id]').forEach(r=> r.classList.toggle('cur', +r.dataset.id===cur));
+    }
+    const total=list.filter(printable).reduce((a,b)=>a+b.n,0), warn=list.filter(i=>issues(i).length).length;
+    $('sTotal').textContent=total.toLocaleString('pt-BR');
+    $('sProd').textContent=list.length;
+    $('sWarn').textContent=warn; $('sWarnWrap').hidden=!warn;
+    $('printBtn').disabled=!total;
+    $('printBtn').textContent='Imprimir';
+  }
+  $('queue').addEventListener('click', e=>{
+    const rm=e.target.closest('[data-rm]'); if(rm){ setQty(rm.dataset.rm, 0); return; }
+    if(e.target.closest('input')) return;
+    const tr=e.target.closest('tr[data-id]'); if(tr){ cur=+tr.dataset.id; render('queue'); }
+  });
+  $('queue').addEventListener('change', e=>{ if(e.target.dataset.q){ setQty(e.target.dataset.q, e.target.value); } });
+  window.addEventListener('resize', ()=>{ clearTimeout(window._rt); window._rt=setTimeout(()=>render('queue'),150); });
+
+  // ---------- lotes e quantidades ----------
+
+  function applyQty(pairs){
+    let ok=0; const miss=[];
+    pairs.forEach(([sku,n])=>{ const p=bySku[String(sku).trim().replace(/^0+/,'')]; if(!p){ miss.push(sku); return; } if(n>0){ qty[p.id]=n; ok++; } });
+    cur=null; renderList(); render();
+    msg(ok+' produtos na fila.'+(miss.length? ' SKU não encontrado: '+miss.slice(0,5).join(', '):''), miss.length>0);
+  }
+  $('useQty').addEventListener('click', ()=>{
+    const pairs=$('qtyPaste').value.replace(/\r/g,'').split('\n').map(l=>l.trim()).filter(Boolean).map(l=>{ const t=l.split(/[\t;, ]+/); return [t[0], parseInt(t[t.length-1],10)||0]; });
+    if(!pairs.length){ msg('Cole pelo menos uma linha com SKU e quantidade.', true); return; }
+    applyQty(pairs);
+  });
+  $('clearQty').addEventListener('click', ()=>{ for(const k in qty) delete qty[k]; cur=null; renderList(); render(); msg(''); });
+
+  // ---------- correção de códigos ----------
+  function cellText(v){ if(v===null||v===undefined) return ''; if(typeof v==='number') return String(Math.round(v)); let s=String(v).trim(); if(/^\d+([.,]\d+)?e\+\d+$/i.test(s)) s=Number(s.replace(',','.')).toFixed(0); return /^[\d\s.\-]+$/.test(s)? s.replace(/\D/g,'') : s; }
+  function importMatrix(m){
+    m=m.filter(r=> r && r.some(c=> String(c).trim()!==''));
+    if(m.length<2){ msg('Inclua a linha de cabeçalho e pelo menos um produto.', true); return; }
+    const H2=m[0].map(h=> String(h).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase());
+    const iN=H2.findIndex(h=>/produto|nome|descri|item/.test(h)), iS=H2.findIndex(h=>/sku|sap|codigo/.test(h) && !/ean|dun|barra|master/.test(h));
+    const iE=H2.findIndex(h=>/ean|gtin.?13/.test(h) && !/master|caixa|cx/.test(h)), iD=H2.findIndex(h=>/dun|itf|gtin.?14|master/.test(h));
+    if((iN<0 && iS<0) || (iE<0 && iD<0)){ msg('Não achei as colunas. Use o cabeçalho: SKU, Produto, EAN, DUN.', true); return; }
+    let ok=0; const miss=[];
+    m.slice(1).forEach(r=>{
+      const p=(iS>=0 && bySku[String(r[iS]).trim().replace(/^0+/,'')]) || (iN>=0 && byKey[norm(r[iN])]);
+      if(!p){ miss.push(String(iS>=0? r[iS] : r[iN]).trim()); return; }
+      const k=pkey(p), c=custom[k]||{};
+      if(iE>=0 && cellText(r[iE])) c.ean=cellText(r[iE]);
+      if(iD>=0 && cellText(r[iD])) c.dun=cellText(r[iD]);
+      if(c.ean||c.dun){ custom[k]=c; ok++; }
+    });
+    saveCodes(); renderList(); render();
+    msg(ok+' códigos atualizados.'+(miss.length? ' Não encontrei: '+miss.slice(0,4).join(', '):''), miss.length>0);
+  }
+  $('useCodes').addEventListener('click', ()=>{
+    const lines=$('codes').value.replace(/\r/g,'').split('\n').filter(l=>l.trim());
+    if(!lines.length){ msg('Cole os códigos com o cabeçalho primeiro.', true); return; }
+    const sep=lines[0].includes('\t')?'\t':(lines[0].includes(';')?';':',');
+    importMatrix(lines.map(l=>l.split(sep)));
+  });
+  $('codeFile').addEventListener('change', e=>{
+    const f=e.target.files[0]; if(!f) return; const r=new FileReader();
+    r.onload=ev=>{ try{ const wb=XLSX.read(new Uint8Array(ev.target.result),{type:'array'}); importMatrix(XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]],{header:1,raw:true,defval:''})); }catch(err){ msg('Não consegui ler esse arquivo. Salve como .xlsx ou .csv.', true); } };
+    r.readAsArrayBuffer(f);
+  });
+
+  // ---------- impressão ----------
+  $('printBtn').addEventListener('click', ()=>{
+    const area=$('print-area'); area.innerHTML=''; const frag=document.createDocumentFragment();
+    selected().filter(printable).forEach(it=>{ const base=labelEl(it.p,it.sp,1); for(let k=0;k<it.n;k++) frag.appendChild(k?base.cloneNode(true):base); });
+    area.appendChild(frag); setTimeout(()=>window.print(),150);
+  });
+  window.addEventListener('afterprint', ()=>{ $('print-area').innerHTML=''; });
+
+  // ---------- exportação ----------
+  const expItems = () => selected().filter(printable).filter(it=>it.n>0);
+  const stamp = () => { const d=new Date(); return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0'); };
+  const tick = () => new Promise(r=>setTimeout(r,0));
+  let dl=null, dlTried=false;
+  async function saveFile(filename, data){
+    if(!dlTried){ dlTried=true; try{ if(window.claude && window.claude.use) dl = await window.claude.use('downloads'); }catch(e){ dl=null; } }
+    if(dl){
+      try{ await dl.save({filename, data}); msg('Arquivo salvo: '+filename); }
+      catch(e){ msg(e && e.code==='declined' ? 'Download cancelado.' : 'Não foi possível salvar o arquivo ('+(e && e.code || 'erro')+').', !(e && e.code==='declined')); }
+      return;
+    }
+    const blob = data instanceof Blob ? data : new Blob([data]);
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=filename; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 4000); msg('Arquivo gerado: '+filename);
+  }
+  const rows = () => expItems().map(it=>({'SKU':it.p.sku,'Produto':it.p.nome,'Tipo de código': it.sp.err?'':fmtName(it.sp),'Código de barras': it.sp.err?'':it.sp.value,'Quantidade':it.n}));
+  async function expCSV(){
+    const r=rows(), cols=Object.keys(r[0]); const qv=v=>{ v=String(v??''); return /[;"\n]/.test(v)? '"'+v.replace(/"/g,'""')+'"' : v; };
+    await saveFile('etiquetas-dellamed-'+stamp()+'.csv', '\ufeff'+[cols.join(';')].concat(r.map(o=>cols.map(c=>qv(o[c])).join(';'))).join('\r\n'));
+  }
+  async function expXLSX(){
+    const ws=XLSX.utils.json_to_sheet(rows()); ws['!cols']=[{wch:12},{wch:48},{wch:12},{wch:16},{wch:11}];
+    const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, 'Etiquetas');
+    await saveFile('etiquetas-dellamed-'+stamp()+'.xlsx', new Uint8Array(XLSX.write(wb,{bookType:'xlsx',type:'array'})));
+  }
+  const zplSafe = t => String(t).replace(/[\^~\\]/g,' ');
+  function buildZPL(items, dpiVal){
+    const dpm = dpiVal==='300'? 12 : 8, k=dpm/8, PW=W*dpm, LL=H*dpm, m=Math.round(M*dpm), R=v=>Math.round(v*k);
+    const out=[];
+    items.forEach(it=>{
+      const p=it.p, two = p.nome.length>36, L=['^XA','^CI28','^PW'+PW,'^LL'+LL,'^LH0,0'];
+      L.push('^FO'+m+','+m+'^A0N,'+R(34)+','+R(30)+'^FB'+(PW-2*m)+',2,'+R(2)+',L,0^FD'+zplSafe(p.nome)+'^FS');
+      let y=m+R(two? 74 : 38);
+      if(p.sku){ L.push('^FO'+m+','+(y+R(19))+'^A0N,'+R(21)+','+R(19)+'^FDSKU^FS'); L.push('^FO'+(m+R(46))+','+y+'^A0N,'+R(42)+','+R(38)+'^FD'+zplSafe(p.sku)+'^FS'); y+=R(46); }
+      L.push('^FO'+m+','+(y+R(2))+'^GB'+(PW-2*m)+','+R(3)+','+R(3)+'^FS'); y+=R(12);
+      const bottom = LL - m - R(S.footer? 22 : 0) - R(40), bh=Math.max(R(60), bottom-y);
+      if(!it.sp.err){
+        const mw=R(3), mwE=R(4);
+        if(it.sp.format==='EAN13') L.push('^BY'+mwE+'^FO'+Math.round((PW-95*mwE)/2)+','+y+'^BEN,'+bh+',Y,N^FD'+it.sp.value.slice(0,12)+'^FS');
+        else if(false) L.push('^BY'+mw+'^FO'+Math.round((PW-113*mw)/2)+','+y+'^BEN,'+bh+',Y,N^FD'+it.sp.value.slice(0,12)+'^FS');
+        else if(it.sp.format==='ITF14') L.push('^BY'+mw+',3^FO'+Math.max(m,Math.round((PW-135*mw)/2))+','+y+'^B2N,'+bh+',Y,N,N^FD'+it.sp.value+'^FS');
+        else if(it.sp.format==='EAN8') L.push('^BY'+mw+'^FO'+Math.round((PW-67*mw)/2)+','+y+'^B8N,'+bh+',Y,N^FD'+it.sp.value.slice(0,7)+'^FS');
+        else L.push('^BY'+R(2)+'^FO'+m+','+y+'^BCN,'+bh+',Y,N,N^FD'+zplSafe(it.sp.value)+'^FS');
+      }
+      if(S.footer) L.push('^FO'+m+','+(LL-m-R(18))+'^A0N,'+R(18)+','+R(16)+'^FB'+(PW-2*m)+',1,0,C,0^FD'+zplSafe(S.footer)+'^FS');
+      L.push('^PQ'+it.n+',0,1,Y','^XZ'); out.push(L.join('\n'));
+    });
+    return out.join('\n');
+  }
+  async function expZPL(){ await saveFile('etiquetas-dellamed-'+stamp()+'-'+$('dpi').value+'dpi-zpl.txt', buildZPL(expItems(), $('dpi').value)); }
+  function drawPdfLabel(doc, p, img){
+    doc.setTextColor(0); doc.setFont('helvetica','bold'); doc.setFontSize(12);
+    const lines=doc.splitTextToSize(p.nome, W-2*M).slice(0,2); doc.text(lines, M, M+3.2, {lineHeightFactor:1.08});
+    let y=M+3.2+(lines.length-1)*4.6+1.6;
+    if(p.sku){ y+=5; doc.setFontSize(7.5); doc.text('SKU', M, y); const lw=doc.getTextWidth('SKU'); doc.setFontSize(15.5); doc.text(p.sku, M+lw+1.4, y); }
+    y+=1.8; doc.setLineWidth(.4); doc.line(M, y, W-M, y); y+=1.1;
+    if(img){ const bottom=S.footer? H-M-3 : H-M, maxW=W-2*M, maxH=bottom-y; let w=maxW, h=w*img.h/img.w; if(h>maxH){ h=maxH; w=h*img.w/img.h; } doc.addImage(img.url,'PNG',(W-w)/2,y+(maxH-h)/2,w,h,img.alias,'FAST'); }
+    if(S.footer){ doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.text(S.footer, W/2, H-M, {align:'center'}); }
+  }
+  async function expPDF(){
+    const { jsPDF } = window.jspdf;
+    const doc=new jsPDF({orientation:'landscape',unit:'mm',format:[W,H],compress:true});
+    const items=expItems(), total=items.reduce((a,b)=>a+b.n,0), imgs={}; let page=0;
+    for(const it of items){
+      let img=null;
+      if(!it.sp.err){ const key=it.sp.format+it.sp.value; if(!imgs[key]){ const c=barcodeCanvas(it.sp,4); imgs[key]={url:c.toDataURL('image/png'),w:c.width,h:c.height,alias:'b'+Object.keys(imgs).length}; } img=imgs[key]; }
+      for(let k=0;k<it.n;k++){
+        if(page>0) doc.addPage([W,H],'landscape'); page++;
+        drawPdfLabel(doc, it.p, img);
+        if(page%200===0){ msg('Gerando PDF: '+page.toLocaleString('pt-BR')+' de '+total.toLocaleString('pt-BR')+' páginas'); await tick(); }
+      }
+    }
+    msg('Montando o arquivo'); await tick();
+    await saveFile('etiquetas-dellamed-'+stamp()+'.pdf', doc.output('blob'));
+  }
+  async function expPNG(){
+    const dpm=$('dpi').value==='300'? 12 : 8, PW=W*dpm, PH=H*dpm, mmp=v=>v*dpm, F='Helvetica, Arial, sans-serif';
+    const zip=new JSZip();
+    for(const it of expItems()){
+      const p=it.p, c=document.createElement('canvas'); c.width=PW; c.height=PH; const g=c.getContext('2d');
+      g.fillStyle='#fff'; g.fillRect(0,0,PW,PH); g.fillStyle='#000'; g.textBaseline='alphabetic';
+      g.font='700 '+mmp(4.2)+'px '+F;
+      const words=p.nome.split(' '), lines=[]; let cu=''; words.forEach(w=>{ const t=cu?cu+' '+w:w; if(g.measureText(t).width>PW-mmp(2*M) && cu){ lines.push(cu); cu=w; } else cu=t; }); if(cu) lines.push(cu);
+      lines.slice(0,2).forEach((l,i)=> g.fillText(l, mmp(M), mmp(M+3.2)+i*mmp(4.6)));
+      let y=mmp(M+3.2)+(Math.min(lines.length,2)-1)*mmp(4.6)+mmp(1.6);
+      if(p.sku){ y+=mmp(5.2); g.font='700 '+mmp(2.6)+'px '+F; g.fillText('SKU', mmp(M), y); const w=g.measureText('SKU').width; g.font='700 '+mmp(5.4)+'px '+F; g.fillText(p.sku, mmp(M)+w+mmp(1.4), y); }
+      y+=mmp(1.8); g.fillRect(mmp(M), y, PW-mmp(2*M), mmp(.4)); y+=mmp(1.1);
+      if(!it.sp.err){ const bc=barcodeCanvas(it.sp, 2*dpm/8); const bottom=PH-mmp(S.footer?M+3:M), maxH=bottom-y, maxW=PW-mmp(2*M); let w=maxW, h=w*bc.height/bc.width; if(h>maxH){ h=maxH; w=h*bc.width/bc.height; } g.drawImage(bc,(PW-w)/2,y+(maxH-h)/2,w,h); }
+      if(S.footer){ g.font='400 '+mmp(2.5)+'px '+F; g.textAlign='center'; g.fillText(S.footer, PW/2, PH-mmp(M)); g.textAlign='left'; }
+      zip.file((p.sku||'sem-sku')+' - '+p.nome.replace(/[\\/:*?"<>|]/g,'')+' - '+it.n+'x.png', await new Promise(r=>c.toBlob(r,'image/png')));
+      await tick();
+    }
+    await saveFile('etiquetas-dellamed-'+stamp()+'-png.zip', await zip.generateAsync({type:'blob'}));
+  }
+  const EXP={pdf:expPDF,zpl:expZPL,xlsx:expXLSX,csv:expCSV,png:expPNG};
+  document.querySelectorAll('[data-exp]').forEach(b=> b.addEventListener('click', async ()=>{
+    $('expMenu').open=false;
+    if(!expItems().length){ msg('A fila está vazia. Escolha os produtos e as quantidades antes de exportar.', true); return; }
+    msg('Gerando arquivo');
+    try{ await EXP[b.dataset.exp](); }catch(e){ console.error(e); msg('Não consegui gerar o arquivo: '+(e && e.message || e), true); }
+  }));
+  document.addEventListener('click', e=>{ const m=$('expMenu'); if(m.open && !m.contains(e.target)) m.open=false; });
+
+  // ---------- impressão direta na Zebra (Zebra Browser Print) ----------
+  const BP_BASES=['https://127.0.0.1:9101','http://127.0.0.1:9100'];
+  let bpBase=null, bpPrinters=[];
+  async function bpFetch(path, opt, ms){
+    const bases = bpBase ? [bpBase] : BP_BASES; let last;
+    for(const b of bases){
+      const ac=new AbortController(), t=setTimeout(()=>ac.abort(), ms||4000);
+      try{ const r=await fetch(b+path, Object.assign({cache:'no-store', signal:ac.signal}, opt||{})); clearTimeout(t);
+        if(r.ok){ bpBase=b; return r; } last=new Error('HTTP '+r.status); }
+      catch(e){ clearTimeout(t); last=e; }
+    }
+    bpBase=null; throw last||new Error('sem resposta');
+  }
+  function zState(kind, txt){ const z=$('zStatus'); z.className='zst '+(kind||''); $('zStatusTxt').textContent=txt; }
+  async function zConnect(){
+    $('zReady').hidden=true; $('zHelp').hidden=true; zState('', 'Procurando o Zebra Browser Print neste computador');
+    try{
+      const r=await bpFetch('/available', null, 15000); const j=await r.json();
+      bpPrinters=(j.printer||[]).filter(d=>!d.deviceType || d.deviceType==='printer');
+      if(!bpPrinters.length){ zState('err','O Browser Print está aberto, mas não encontrou nenhuma impressora Zebra.'); $('zHelp').hidden=false; return; }
+      let pref=''; try{ pref=localStorage.getItem('dm-etq-zebra')||''; }catch(e){}
+      $('zPrinter').innerHTML=bpPrinters.map((d,i)=>`<option value="${i}"${d.name===pref?' selected':''}>${esc(d.name)}${d.connection?' ('+esc(d.connection)+')':''}</option>`).join('');
+      $('zDpi').value=S.dpi;
+      zState('ok', bpPrinters.length===1 ? 'Conectado à impressora '+bpPrinters[0].name : 'Conectado. '+bpPrinters.length+' impressoras encontradas.');
+      $('zReady').hidden=false; zUpdateSend();
+    }catch(e){
+      zState('err','Não encontrei o Zebra Browser Print neste computador.'); $('zHelp').hidden=false;
+    }
+  }
+  function zUpdateSend(){
+    const n=expItems().reduce((a,b)=>a+b.n,0);
+    $('zSend').textContent = n ? 'Imprimir '+n.toLocaleString('pt-BR')+' etiqueta'+(n>1?'s':'') : 'Imprimir lote';
+    $('zSend').disabled=!n; $('zTest').disabled=!n;
+  }
+  async function zSend(test){
+    const items=expItems(); if(!items.length){ $('zMsg').textContent='A fila está vazia.'; return; }
+    const dev=bpPrinters[+$('zPrinter').value]; if(!dev) return;
+    const list = test ? [Object.assign({}, items.find(i=>i.p.id===cur)||items[0], {n:1})] : items;
+    const total = list.reduce((a,b)=>a+b.n,0);
+    if(!test && !confirm('Enviar '+total.toLocaleString('pt-BR')+' etiquetas para '+dev.name+'?')) return;
+    const zpl=buildZPL(list, $('zDpi').value);
+    $('zMsg').style.color=''; $('zMsg').textContent='Enviando para '+dev.name+'…'; $('zTest').disabled=$('zSend').disabled=true;
+    try{
+      await bpFetch('/write', {method:'POST', headers:{'Content-Type':'text/plain;charset=UTF-8'}, body:JSON.stringify({device:dev, data:zpl})}, 60000);
+      try{ localStorage.setItem('dm-etq-zebra', dev.name); }catch(e){}
+      $('zMsg').textContent = test ? 'Etiqueta de teste enviada ('+list[0].p.nome+'). Confira o alinhamento e passe no leitor.' : total.toLocaleString('pt-BR')+' etiquetas enviadas para '+dev.name+'.';
+      msg(test ? 'Teste enviado para a Zebra.' : total.toLocaleString('pt-BR')+' etiquetas enviadas para a Zebra.');
+    }catch(e){
+      $('zMsg').style.color='var(--err)'; $('zMsg').textContent='A impressora não recebeu o lote. Confira se ela está ligada e se o Browser Print continua aberto, e tente de novo.';
+    }
+    zUpdateSend();
+  }
+  $('zebraBtn').addEventListener('click', ()=>{ $('zebraDlg').showModal(); zConnect(); });
+  $('closeZebra').addEventListener('click', ()=> $('zebraDlg').close());
+  $('zRetry').addEventListener('click', zConnect);
+  $('zTest').addEventListener('click', ()=>zSend(true));
+  $('zSend').addEventListener('click', ()=>zSend(false));
+  $('zDpi').addEventListener('change', e=>{ S.dpi=e.target.value; $('dpi').value=S.dpi; save(); });
+
+  // ---------- ajustes ----------
+  $('openSettings').addEventListener('click', ()=> $('settings').showModal());
+  $('closeSettings').addEventListener('click', ()=> $('settings').close());
+  $('footer').addEventListener('input', e=>{ S.footer=e.target.value; save(); render(); });
+  $('allowNoCode').addEventListener('change', e=>{ S.allowNoCode=e.target.checked; save(); render(); });
+  $('codeType').addEventListener('change', e=>{ S.codeType=e.target.value; save(); renderList(); render(); });
+  $('dpi').addEventListener('change', e=>{ S.dpi=e.target.value; save(); });
+  $('footer').value=S.footer; $('allowNoCode').checked=S.allowNoCode; $('codeType').value=S.codeType; $('dpi').value=S.dpi;
+  renderList(); render();
+}).catch(e=>{ document.getElementById('plist').innerHTML='<p class="qempty">Não consegui carregar a lista de produtos (produtos.json). Atualize a página.</p>'; });
+</script>
+</body>
+</html>
