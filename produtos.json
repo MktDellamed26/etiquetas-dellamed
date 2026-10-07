@@ -1,0 +1,2912 @@
+[
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "05588",
+  "nome": "CADEIRA DE RODAS D100",
+  "ean": "7898952570435",
+  "dun": "",
+  "medida_caixa": "76 × 26 × 81 cm",
+  "qtd_master": "1",
+  "medida_master": "76 × 26 × 81 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000699",
+  "nome": "CADEIRA DE RODAS D100 POP",
+  "ean": "7908607309997",
+  "dun": "",
+  "medida_caixa": "77 × 25 × 76,5 cm",
+  "qtd_master": "1",
+  "medida_master": "77 × 25 × 76,5 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001106",
+  "nome": "CADEIRA DE RODAS D100 LIGHT",
+  "ean": "7908607313543",
+  "dun": "",
+  "medida_caixa": "78 × 28 × 83 cm",
+  "qtd_master": "1",
+  "medida_master": "78 × 28 × 83 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "05589",
+  "nome": "CADEIRA DE RODAS D400 T40",
+  "ean": "7898952570459",
+  "dun": "",
+  "medida_caixa": "82 × 29 × 77,5 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29 × 77,5 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "05590",
+  "nome": "CADEIRA DE RODAS D400 T44",
+  "ean": "7898952570466",
+  "dun": "",
+  "medida_caixa": "82 × 29 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "05591",
+  "nome": "CADEIRA DE RODAS D400 T46",
+  "ean": "7898952570473",
+  "dun": "",
+  "medida_caixa": "82 × 29,5 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29,5 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06608",
+  "nome": "CADEIRA DE RODAS D400 T48",
+  "ean": "7898952570756",
+  "dun": "",
+  "medida_caixa": "82,5 × 29 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82,5 × 29 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06888",
+  "nome": "CADEIRA DE RODAS D500",
+  "ean": "7898952570893",
+  "dun": "",
+  "medida_caixa": "85,5 × 33 × 93 cm",
+  "qtd_master": "1",
+  "medida_master": "85,5 × 33 × 93 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000684",
+  "nome": "CADEIRA DE RODAS D600 POP",
+  "ean": "7908607309904",
+  "dun": "",
+  "medida_caixa": "78 × 27 × 75 cm",
+  "qtd_master": "1",
+  "medida_master": "78 × 27 × 75 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06470",
+  "nome": "CADEIRA DE RODAS D600 T40",
+  "ean": "7898952570640",
+  "dun": "",
+  "medida_caixa": "99 × 33 × 70 cm",
+  "qtd_master": "1",
+  "medida_master": "99 × 33 × 70 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06471",
+  "nome": "CADEIRA DE RODAS D600 T44",
+  "ean": "7898952570657",
+  "dun": "",
+  "medida_caixa": "99 × 33 × 70 cm",
+  "qtd_master": "1",
+  "medida_master": "99 × 33 × 70 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06472",
+  "nome": "CADEIRA DE RODAS D600 T46",
+  "ean": "7898952570664",
+  "dun": "",
+  "medida_caixa": "99 × 33 × 70 cm",
+  "qtd_master": "1",
+  "medida_master": "99 × 33 × 70 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "06473",
+  "nome": "CADEIRA DE RODAS D600 T48",
+  "ean": "7898952570671",
+  "dun": "",
+  "medida_caixa": "99 × 33 × 70 cm",
+  "qtd_master": "1",
+  "medida_master": "99 × 33 × 70 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000191",
+  "nome": "CADEIRA DE RODAS D700 T40",
+  "ean": "7908607307320",
+  "dun": "",
+  "medida_caixa": "92 × 33 × 101 cm",
+  "qtd_master": "1",
+  "medida_master": "92 × 33 × 101 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000192",
+  "nome": "CADEIRA DE RODAS D700 T44",
+  "ean": "7908607307337",
+  "dun": "",
+  "medida_caixa": "92 × 33 × 102 cm",
+  "qtd_master": "1",
+  "medida_master": "92 × 33 × 102 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000193",
+  "nome": "CADEIRA DE RODAS D700 T48",
+  "ean": "7908607307344",
+  "dun": "",
+  "medida_caixa": "93 × 33 × 102 cm",
+  "qtd_master": "1",
+  "medida_master": "93 × 33 × 102 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001126",
+  "nome": "CADEIRA DE RODAS D700 LIGHT T40",
+  "ean": "7908607313659",
+  "dun": "",
+  "medida_caixa": "92 × 32 × 103 cm",
+  "qtd_master": "1",
+  "medida_master": "92 × 32 × 103 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001107",
+  "nome": "CADEIRA DE RODAS D700 LIGHT T44",
+  "ean": "7908607313550",
+  "dun": "",
+  "medida_caixa": "92 × 32 × 103 cm",
+  "qtd_master": "1",
+  "medida_master": "92 × 32 × 103 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001127",
+  "nome": "CADEIRA DE RODAS D700 LIGHT T48",
+  "ean": "7908607313666",
+  "dun": "",
+  "medida_caixa": "92 × 32 × 103 cm",
+  "qtd_master": "1",
+  "medida_master": "92 × 32 × 103 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000548",
+  "nome": "CADEIRA DE RODAS MONOBLOCO M2 MAX MOVING T38",
+  "ean": "7908607309058",
+  "dun": "",
+  "medida_caixa": "74 × 63 × 63 cm",
+  "qtd_master": "1",
+  "medida_master": "74 × 63 × 63 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000551",
+  "nome": "CADEIRA DE RODAS MONOBLOCO M2 MAX MOVING T40",
+  "ean": "7908607309089",
+  "dun": "",
+  "medida_caixa": "74 × 63 × 63 cm",
+  "qtd_master": "1",
+  "medida_master": "74 × 63 × 63 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001000556",
+  "nome": "CADEIRA DE RODAS MONOBLOCO M2 MAX MOVING T42",
+  "ean": "7908607309126",
+  "dun": "",
+  "medida_caixa": "74 × 63 × 63 cm",
+  "qtd_master": "1",
+  "medida_master": "74 × 63 × 63 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001115",
+  "nome": "CADEIRA DE RODAS D400 T36",
+  "ean": "7908607313604",
+  "dun": "",
+  "medida_caixa": "82 × 29 × 77,5 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29 × 77,5 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001120",
+  "nome": "CADEIRA DE RODAS D400 T38",
+  "ean": "7908607313611",
+  "dun": "",
+  "medida_caixa": "82 × 29 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001121",
+  "nome": "CADEIRA DE RODAS D400 T42",
+  "ean": "7908607313635",
+  "dun": "",
+  "medida_caixa": "82 × 29,5 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82 × 29,5 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras de Rodas",
+  "sku": "0001001122",
+  "nome": "CADEIRA DE RODAS D400 T50",
+  "ean": "7908607313628",
+  "dun": "",
+  "medida_caixa": "82,5 × 29 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "82,5 × 29 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001001088",
+  "nome": "CADEIRA DE RODAS MOTORIZADA SCOOTER MED MAX",
+  "ean": "7908607313383",
+  "dun": "",
+  "medida_caixa": "54 × 52 × 75 cm",
+  "qtd_master": "1",
+  "medida_master": "54 × 52 × 75 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "06496",
+  "nome": "CADEIRA DE RODAS MOTORIZADA SCOOTER LB LIGHT",
+  "ean": "7898952570862",
+  "dun": "",
+  "medida_caixa": "113 × 51 × 54 cm",
+  "qtd_master": "1",
+  "medida_master": "113 × 51 × 54 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "05587",
+  "nome": "CADEIRA MOTORIZADA D1000",
+  "ean": "7898952570398",
+  "dun": "",
+  "medida_caixa": "95 × 41,5 × 81 cm",
+  "qtd_master": "1",
+  "medida_master": "95 × 41,5 × 81 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001000550",
+  "nome": "CADEIRA MOTORIZADA D3000 SUPER LIGHT",
+  "ean": "7908607309072",
+  "dun": "",
+  "medida_caixa": "88 × 67 × 46 cm",
+  "qtd_master": "1",
+  "medida_master": "88 × 67 × 46 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001000596",
+  "nome": "CADEIRA MOTORIZADA D750 LIGHT",
+  "ean": "7908607309409",
+  "dun": "",
+  "medida_caixa": "74,5 × 77 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "74,5 × 77 × 40 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001000051",
+  "nome": "CADEIRA MOTORIZADA D800",
+  "ean": "7908607305753",
+  "dun": "",
+  "medida_caixa": "77 × 38 × 80 cm",
+  "qtd_master": "1",
+  "medida_master": "77 × 38 × 80 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "06635",
+  "nome": "CADEIRA MOTORIZADA D900",
+  "ean": "7898952570855",
+  "dun": "",
+  "medida_caixa": "95 × 40,5 × 84 cm",
+  "qtd_master": "1",
+  "medida_master": "95 × 40,5 × 84 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001000361",
+  "nome": "CADEIRA MOTORIZADA RECLINÁVEL OPTIMUSMED",
+  "ean": "7908607307993",
+  "dun": "",
+  "medida_caixa": "102 × 76 × 74 cm",
+  "qtd_master": "1",
+  "medida_master": "102 × 76 × 74 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "07041",
+  "nome": "CADEIRA MOTORIZADA SPACEMED",
+  "ean": "7908607305258",
+  "dun": "",
+  "medida_caixa": "97,5 × 75 × 49 cm",
+  "qtd_master": "1",
+  "medida_master": "97,5 × 75 × 49 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "07038",
+  "nome": "CADEIRA DE RODAS MOTORIZADA SCOOTER CS",
+  "ean": "7908607304541",
+  "dun": "",
+  "medida_caixa": "156 × 62 × 61,5 cm",
+  "qtd_master": "1",
+  "medida_master": ""
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001001102",
+  "nome": "CADEIRA MOTORIZADA EASY",
+  "ean": "7908607313536",
+  "dun": "",
+  "medida_caixa": "76 × 34 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "76 × 34 × 78 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001001101",
+  "nome": "CADEIRA MOTORIZADA PRIME",
+  "ean": "7908607313529",
+  "dun": "",
+  "medida_caixa": "62 × 39 × 84 cm",
+  "qtd_master": "1",
+  "medida_master": "62 × 39 × 84 cm"
+ },
+ {
+  "grupo": "Cadeiras Motorizadas",
+  "sku": "0001000358",
+  "nome": "CADEIRA DE BANHO INFANTIL CONCHA",
+  "ean": "7908607307962",
+  "dun": "",
+  "medida_caixa": "84 × 18 × 62 cm",
+  "qtd_master": "1",
+  "medida_master": "84 × 18 × 62 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "06725",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D30",
+  "ean": "7898952570794",
+  "dun": "",
+  "medida_caixa": "49 × 17 × 41 cm",
+  "qtd_master": "1",
+  "medida_master": "49 × 17 × 41 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "0001001098",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D35",
+  "ean": "7908607313499",
+  "dun": "",
+  "medida_caixa": "57 × 50 × 18,5 cm",
+  "qtd_master": "1",
+  "medida_master": "57 × 50 × 18,5 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "05435",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D40",
+  "ean": "7898952570374",
+  "dun": "",
+  "medida_caixa": "52 × 18 × 46 cm",
+  "qtd_master": "1",
+  "medida_master": "52 × 18 × 46 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "06860",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D45",
+  "ean": "7908607300000",
+  "dun": "",
+  "medida_caixa": "54 × 18 × 70 cm",
+  "qtd_master": "1",
+  "medida_master": "54 × 18 × 70 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "05433",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D50",
+  "ean": "7898952570367",
+  "dun": "",
+  "medida_caixa": "54 × 21 × 71,5 cm",
+  "qtd_master": "1",
+  "medida_master": "54 × 21 × 71,5 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "0001000464",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D55 EM ALUMÍNIO",
+  "ean": "7908607308679",
+  "dun": "",
+  "medida_caixa": "53 × 18 × 62 cm",
+  "qtd_master": "1",
+  "medida_master": "53 × 18 × 62 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "05434",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D60 EM ALUMÍNIO",
+  "ean": "7898952570350",
+  "dun": "",
+  "medida_caixa": "59,5 × 23 × 55 cm",
+  "qtd_master": "1",
+  "medida_master": "59,5 × 23 × 55 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "0001000359",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D65",
+  "ean": "7908607307979",
+  "dun": "",
+  "medida_caixa": "62 × 33 × 72 cm",
+  "qtd_master": "1",
+  "medida_master": "62 × 33 × 72 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "0001000056",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D70",
+  "ean": "7908607305807",
+  "dun": "",
+  "medida_caixa": "80,5 × 35 × 68,5 cm",
+  "qtd_master": "1",
+  "medida_master": "80,5 × 35 × 68,5 cm"
+ },
+ {
+  "grupo": "Cadeiras Higiênicas",
+  "sku": "0001001100",
+  "nome": "CADEIRA DE HIGIENIZAÇÃO D75",
+  "ean": "7908607313512",
+  "dun": "",
+  "medida_caixa": "74 × 64 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "74 × 64 × 35 cm"
+ },
+ {
+  "grupo": "Cadeira de Transferência",
+  "sku": "0001001113",
+  "nome": "CADEIRA DE TRANSFERÊNCIA D80 MANUAL",
+  "ean": "7908607313598",
+  "dun": "",
+  "medida_caixa": "66 × 35 × 84,5 cm",
+  "qtd_master": "1",
+  "medida_master": "66 × 35 × 84,5 cm"
+ },
+ {
+  "grupo": "Cadeira de Transferência",
+  "sku": "06955",
+  "nome": "CADEIRA DE TRANSPORTE D90",
+  "ean": "7908607305609",
+  "dun": "",
+  "medida_caixa": "54 × 24,5 × 74 cm",
+  "qtd_master": "1",
+  "medida_master": "54 × 24,5 × 74 cm"
+ },
+ {
+  "grupo": "Cadeira de Transferência",
+  "sku": "06956",
+  "nome": "CADEIRA DE TRANSFERÊNCIA D80 ELÉTRICA",
+  "ean": "7908607300161",
+  "dun": "",
+  "medida_caixa": "89 × 56 × 32 cm",
+  "qtd_master": "1",
+  "medida_master": "89 × 56 × 32 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "05203",
+  "nome": "ANDADOR D10",
+  "ean": "7898952570244",
+  "dun": "17898952570241",
+  "medida_caixa": "69 × 54 cm",
+  "qtd_master": "4",
+  "medida_master": "53,5 × 30,5 × 45 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "05426",
+  "nome": "PAR DE RODAS ANDADOR D10",
+  "ean": "7898952570442",
+  "dun": "",
+  "medida_caixa": "",
+  "qtd_master": "5",
+  "medida_master": "33 × 34 × 14 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "0001000494",
+  "nome": "ANDADOR D10 POP",
+  "ean": "7908607308839",
+  "dun": "17908607308836",
+  "medida_caixa": "40,5 × 44,5 × 7 cm",
+  "qtd_master": "4",
+  "medida_master": "54 × 30 × 46 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "0001000151",
+  "nome": "ANDADOR D10 POP",
+  "ean": "7908607308839",
+  "dun": "17908607308836",
+  "medida_caixa": "40,5 × 44,5 × 7 cm",
+  "qtd_master": "4",
+  "medida_master": "54 × 30 × 46 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "06248",
+  "nome": "ANDADOR D12",
+  "ean": "7908607305975",
+  "dun": "",
+  "medida_caixa": "57 × 15,5 × 55,5 cm",
+  "qtd_master": "1",
+  "medida_master": "57 × 15,5 × 55,5 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "0001000098",
+  "nome": "ANDADOR D11.3 RODAS",
+  "ean": "7908607305937",
+  "dun": "",
+  "medida_caixa": "71 × 15,5 × 42 cm",
+  "qtd_master": "1",
+  "medida_master": "71 × 15,5 × 42 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "06856",
+  "nome": "ANDADOR D14",
+  "ean": "7898952570800",
+  "dun": "",
+  "medida_caixa": "63 × 29 × 37 cm",
+  "qtd_master": "1",
+  "medida_master": "63 × 29 × 37 cm"
+ },
+ {
+  "grupo": "Andadores",
+  "sku": "06871",
+  "nome": "ANDADOR D15",
+  "ean": "7898952570961",
+  "dun": "",
+  "medida_caixa": "48,5 × 25 × 57 cm",
+  "qtd_master": "1",
+  "medida_master": "48,5 × 25 × 57 cm"
+ },
+ {
+  "grupo": "Bengalas e Muletas",
+  "sku": "06243",
+  "nome": "BENGALA 4 PONTAS D9",
+  "ean": "7898952570619",
+  "dun": "17898952570616",
+  "medida_caixa": "",
+  "qtd_master": "10",
+  "medida_master": "72 × 30 × 36 cm"
+ },
+ {
+  "grupo": "Bengalas e Muletas",
+  "sku": "05396",
+  "nome": "BENGALA TIPO T D8",
+  "ean": "7898952570251",
+  "dun": "",
+  "medida_caixa": "",
+  "qtd_master": "10",
+  "medida_master": "67 × 16 × 15 cm"
+ },
+ {
+  "grupo": "Bengalas e Muletas",
+  "sku": "05394",
+  "nome": "MULETA D6",
+  "ean": "7898952570275",
+  "dun": "17898952570272",
+  "medida_caixa": "",
+  "qtd_master": "10",
+  "medida_master": "61 × 34 × 21,5 cm"
+ },
+ {
+  "grupo": "Bengalas e Muletas",
+  "sku": "06953",
+  "nome": "MULETA D7 UNIVERSAL",
+  "ean": "7908607300147",
+  "dun": "17908607300144",
+  "medida_caixa": "",
+  "qtd_master": "10",
+  "medida_master": "55 × 31 × 33,5 cm"
+ },
+ {
+  "grupo": "Banquetas",
+  "sku": "05255",
+  "nome": "BANQUETA D1",
+  "ean": "7898952570336",
+  "dun": "",
+  "medida_caixa": "58 × 11 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "58 × 11 × 34 cm"
+ },
+ {
+  "grupo": "Banquetas",
+  "sku": "05256",
+  "nome": "BANQUETA D2",
+  "ean": "7898952570329",
+  "dun": "",
+  "medida_caixa": "57 × 13,5 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "57 × 13,5 × 35 cm"
+ },
+ {
+  "grupo": "Banquetas",
+  "sku": "05257",
+  "nome": "BANQUETA D3",
+  "ean": "7898952570312",
+  "dun": "",
+  "medida_caixa": "59 × 13,5 × 37,5 cm",
+  "qtd_master": "1",
+  "medida_master": "59 × 13,5 × 37,5 cm"
+ },
+ {
+  "grupo": "Camas Hospitalares",
+  "sku": "06250",
+  "nome": "CAMA HOSPITALAR MANUAL 2 MOVIMENTOS DX2",
+  "ean": "7898952570596",
+  "dun": "",
+  "medida_caixa": "202 × 95 × 12,5 cm",
+  "qtd_master": "1",
+  "medida_master": "202 × 95 × 12,5 cm"
+ },
+ {
+  "grupo": "Camas Hospitalares",
+  "sku": "06855",
+  "nome": "CAMA HOSPITALAR MANUAL 3 MOVIMENTOS DX3",
+  "ean": "7898952570428",
+  "dun": "",
+  "medida_caixa": "203 × 92 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "203 × 92 × 30 cm"
+ },
+ {
+  "grupo": "Camas Hospitalares",
+  "sku": "0001001062",
+  "nome": "CAMA HOSPITALAR MANUAL 2 MOVIMENTOS DX",
+  "ean": "7908607313154",
+  "dun": "",
+  "medida_caixa": "201 × 94 × 14 cm",
+  "qtd_master": "1",
+  "medida_master": "201 × 94 × 14 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05200",
+  "nome": "ALMOFADA AIR BASIC 42x42",
+  "ean": "7898952570213",
+  "dun": "17898952570210",
+  "medida_caixa": "47,5 × 4,5 × 43 cm",
+  "qtd_master": "10",
+  "medida_master": "47 × 45,5 × 46,5 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05201",
+  "nome": "ALMOFADA AIR BASIC 46x41",
+  "ean": "7898952570220",
+  "dun": "17898952570227",
+  "medida_caixa": "47,5 × 4,5 × 47 cm",
+  "qtd_master": "10",
+  "medida_master": "48 × 45,5 × 50 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05202",
+  "nome": "ALMOFADA AIR BASIC 46x46",
+  "ean": "7898952570237",
+  "dun": "17898952570234",
+  "medida_caixa": "47,5 × 4,5 × 47,5 cm",
+  "qtd_master": "10",
+  "medida_master": "48,5 × 48,5 × 50 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "04762",
+  "nome": "ALMOFADA AIR CELL 40x40",
+  "ean": "7898952570183",
+  "dun": "17898952570180",
+  "medida_caixa": "42,5 × 43 × 9,5 cm",
+  "qtd_master": "5",
+  "medida_master": "51,5 × 45 × 45 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "04763",
+  "nome": "ALMOFADA AIR CELL 46x40",
+  "ean": "7898952570190",
+  "dun": "17898952570197",
+  "medida_caixa": "48 × 43 × 9,5 cm",
+  "qtd_master": "5",
+  "medida_master": "51,5 × 50 × 45 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "04764",
+  "nome": "ALMOFADA AIR CELL 46x46",
+  "ean": "7898952570206",
+  "dun": "17898952570203",
+  "medida_caixa": "48 × 48 × 9,5 cm",
+  "qtd_master": "5",
+  "medida_master": "51 × 50,5 × 51 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05518",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR PLUS - Avulso",
+  "ean": "7898952570121",
+  "dun": "17898952570128",
+  "medida_caixa": "50 × 19 × 33,5 cm",
+  "qtd_master": "10",
+  "medida_master": "52 × 19 × 33,5 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05517",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR PLUS 127v",
+  "ean": "7898952570107",
+  "dun": "17898952570104",
+  "medida_caixa": "25 × 17 × 16 cm",
+  "qtd_master": "5",
+  "medida_master": "88 × 26,5 × 18,5 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "05516",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR PLUS 220v",
+  "ean": "7898952570114",
+  "dun": "17898952570111",
+  "medida_caixa": "25 × 17 × 16 cm",
+  "qtd_master": "5",
+  "medida_master": "88 × 26,5 × 18,5 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "06896",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR TUBE - Avulso",
+  "ean": "7908607309218",
+  "dun": "",
+  "medida_caixa": "50 × 22 × 40 cm",
+  "qtd_master": "2",
+  "medida_master": "36 × 26,5 × 29 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "06736",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR TUBE 127v",
+  "ean": "7898952570886",
+  "dun": "17898952570883",
+  "medida_caixa": "24,5 × 17 × 40,5 cm",
+  "qtd_master": "5",
+  "medida_master": "37 × 25,5 × 44 cm"
+ },
+ {
+  "grupo": "Colchão e Almofadas",
+  "sku": "06737",
+  "nome": "COLCHÃO DE PRESSÃO ALTERNADA AIR TUBE 220v",
+  "ean": "7898952570879",
+  "dun": "17898952570876",
+  "medida_caixa": "24,5 × 17 × 40,5 cm",
+  "qtd_master": "5",
+  "medida_master": "37 × 25,5 × 44 cm"
+ },
+ {
+  "grupo": "Guincho",
+  "sku": "05718",
+  "nome": "GUINCHO PARA ELEVAÇÃO MANUAL D5000",
+  "ean": "7898952570343",
+  "dun": "",
+  "medida_caixa": "132 × 67 × 31,5 cm",
+  "qtd_master": "1",
+  "medida_master": "132 × 67 × 31,5 cm"
+ },
+ {
+  "grupo": "Poltrona",
+  "sku": "06867",
+  "nome": "POLTRONA ELEVAMED",
+  "ean": "7898952570916",
+  "dun": "",
+  "medida_caixa": "77 × 73,5 × 65,5 cm",
+  "qtd_master": "1",
+  "medida_master": "77 × 73,5 × 65,5 cm"
+ },
+ {
+  "grupo": "Kit para DX3",
+  "sku": "0001000855",
+  "nome": "KIT DX HOME PARA CAMA DX3",
+  "ean": "7908607311488",
+  "dun": "",
+  "medida_caixa": "103 × 14,5 × 64 cm",
+  "qtd_master": "1",
+  "medida_master": "103 × 14,5 × 64 cm"
+ },
+ {
+  "grupo": "Monitores de Pressão",
+  "sku": "06733",
+  "nome": "MONITOR DE PRESSÃO DE BRAÇO SUPER",
+  "ean": "7898952570848",
+  "dun": "17898952570845",
+  "medida_caixa": "13 × 10,5 × 16,5 cm",
+  "qtd_master": "4",
+  "medida_master": "27,5 × 18,3 × 20,3 cm"
+ },
+ {
+  "grupo": "Monitores de Pressão",
+  "sku": "07035",
+  "nome": "MONITOR DE PRESSÃO DE BRAÇO ULTRA MAX",
+  "ean": "7908607301380",
+  "dun": "17908607301387",
+  "medida_caixa": "13 × 8,5 × 19,4 cm",
+  "qtd_master": "4",
+  "medida_master": "27,5 × 18,3 × 20,3 cm"
+ },
+ {
+  "grupo": "Monitores de Pressão",
+  "sku": "07036",
+  "nome": "MONITOR DE PRESSÃO DE PULSO ULTRA MAX",
+  "ean": "7908607300222",
+  "dun": "17908607300229",
+  "medida_caixa": "10,5 × 8,3 × 8,3 cm",
+  "qtd_master": "4",
+  "medida_master": "22,5 × 17,5 × 9,3 cm"
+ },
+ {
+  "grupo": "Monitores de Pressão",
+  "sku": "06734",
+  "nome": "MONITOR DE PRESSÃO PULSO SUPER",
+  "ean": "7898952570909",
+  "dun": "17898952570906",
+  "medida_caixa": "8,5 × 8,5 × 8,8 cm",
+  "qtd_master": "4",
+  "medida_master": "18 × 10 × 18 cm"
+ },
+ {
+  "grupo": "Monitores de Pressão",
+  "sku": "0001000696",
+  "nome": "MONITOR DE PRESSÃO DE BRAÇO LIGHT",
+  "ean": "7908607309966",
+  "dun": "17908607309963",
+  "medida_caixa": "",
+  "qtd_master": "4",
+  "medida_master": "23,8 × 15,8 × 16,8 cm"
+ },
+ {
+  "grupo": "Oxímetros",
+  "sku": "05365",
+  "nome": "OXÍMETRO COM ALARME",
+  "ean": "7898952570176",
+  "dun": "17898952570173",
+  "medida_caixa": "5 × 9,5 × 6,5 cm",
+  "qtd_master": "4",
+  "medida_master": "19,5 × 13 × 5,4 cm"
+ },
+ {
+  "grupo": "Oxímetros",
+  "sku": "06638",
+  "nome": "OXÍMETRO PEDIÁTRICO",
+  "ean": "7898952570718",
+  "dun": "17898952570715",
+  "medida_caixa": "9,5 × 6 × 5 cm",
+  "qtd_master": "4",
+  "medida_master": "19,5 × 13 × 5,4 cm"
+ },
+ {
+  "grupo": "Oxímetros",
+  "sku": "05593",
+  "nome": "OXÍMETRO SEM ALARME",
+  "ean": "7898952570169",
+  "dun": "17898952570166",
+  "medida_caixa": "7 × 5,5 × 10,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 12 × 12 cm"
+ },
+ {
+  "grupo": "Termômetros",
+  "sku": "12385",
+  "nome": "TERMÔMETRO CLÍNICO HASTE FIXA AZUL",
+  "ean": "7908607300185",
+  "dun": "17908607300182",
+  "medida_caixa": "6 × 2 × 16 cm",
+  "qtd_master": "10",
+  "medida_master": "17 × 9 × 12,5 cm"
+ },
+ {
+  "grupo": "Termômetros",
+  "sku": "12389",
+  "nome": "TERMÔMETRO CLÍNICO HASTE FLEXÍVEL - Azul",
+  "ean": "7908607300208",
+  "dun": "17908607300205",
+  "medida_caixa": "6 × 2 × 16 cm",
+  "qtd_master": "10",
+  "medida_master": "15,5 × 9 × 13 cm"
+ },
+ {
+  "grupo": "Termômetros",
+  "sku": "12391",
+  "nome": "TERMÔMETRO CLÍNICO HASTE FLEXÍVEL - Rosa",
+  "ean": "7908607300192",
+  "dun": "17908607300199",
+  "medida_caixa": "6 × 2 × 16 cm",
+  "qtd_master": "10",
+  "medida_master": "15,5 × 9 × 13 cm"
+ },
+ {
+  "grupo": "Termômetros",
+  "sku": "0001000454",
+  "nome": "TERMÔMETRO INFRAVERMELHO",
+  "ean": "7908607308624",
+  "dun": "17908607308621",
+  "medida_caixa": "5 × 7 × 16 cm",
+  "qtd_master": "10",
+  "medida_master": "11,5 × 18 × 16 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000421",
+  "nome": "ESTETOSCÓPIO DUPLO - Preto",
+  "ean": "7908607308402",
+  "dun": "17908607308409",
+  "medida_caixa": "18,5 × 10 × 2,5 cm",
+  "qtd_master": "6",
+  "medida_master": "19 × 16 × 10,5 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000422",
+  "nome": "ESTETOSCÓPIO DUPLO - Vinho",
+  "ean": "7908607308419",
+  "dun": "17908607308416",
+  "medida_caixa": "18,5 × 10 × 2,5 cm",
+  "qtd_master": "6",
+  "medida_master": "19 × 16 × 10,5 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000425",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Azul",
+  "ean": "7908607308440",
+  "dun": "17908607308447",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000423",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Preto",
+  "ean": "7908607308426",
+  "dun": "17908607308423",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000426",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Rosa",
+  "ean": "7908607308457",
+  "dun": "17908607308454",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000427",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Roxo",
+  "ean": "7908607308464",
+  "dun": "17908607308461",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000428",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Verde",
+  "ean": "7908607308471",
+  "dun": "17908607308478",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000424",
+  "nome": "ESTETOSCÓPIO RAPPAPORT - Vinho",
+  "ean": "7908607308433",
+  "dun": "17908607308430",
+  "medida_caixa": "25 × 12,3 × 4,5 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 26 × 14,7 cm"
+ },
+ {
+  "grupo": "Estetoscópios",
+  "sku": "0001000420",
+  "nome": "ESTETOSCÓPIO SIMPLES PRETO",
+  "ean": "7908607308396",
+  "dun": "17908607308393",
+  "medida_caixa": "18,5 × 10 × 2,5 cm",
+  "qtd_master": "6",
+  "medida_master": "19,5 × 16,5 × 10,5 cm"
+ },
+ {
+  "grupo": "Nebulizadores",
+  "sku": "12374",
+  "nome": "NEBULIZADOR COMPRESSOR COMPACTO",
+  "ean": "7898952570930",
+  "dun": "17898952570937",
+  "medida_caixa": "12,5 × 10 × 16 cm",
+  "qtd_master": "6",
+  "medida_master": "26 × 20 × 16 cm"
+ },
+ {
+  "grupo": "Nebulizadores",
+  "sku": "07002",
+  "nome": "NEBULIZADOR MESH",
+  "ean": "7908607301465",
+  "dun": "17908607301462",
+  "medida_caixa": "18,5 × 6,5 × 17 cm",
+  "qtd_master": "4",
+  "medida_master": "27 × 19 × 17,5 cm"
+ },
+ {
+  "grupo": "Umidificadores",
+  "sku": "0001000583",
+  "nome": "UMIDIFICADOR UMI LIGHT 2,3 L",
+  "ean": "7908607309683",
+  "dun": "17908607309680",
+  "medida_caixa": "20 × 17,5 × 17,5 cm",
+  "qtd_master": "4",
+  "medida_master": "37 × 19 × 41,5 cm"
+ },
+ {
+  "grupo": "Umidificadores",
+  "sku": "06889",
+  "nome": "UMIDIFICADOR UMI POP 2,3L",
+  "ean": "7908607300109",
+  "dun": "17908607300106",
+  "medida_caixa": "16,5 × 16 × 26 cm",
+  "qtd_master": "4",
+  "medida_master": "35 × 35 × 28 cm"
+ },
+ {
+  "grupo": "Umidificadores",
+  "sku": "06905",
+  "nome": "UMIDIFICADOR UMI STAR 3,4 L",
+  "ean": "7908607300116",
+  "dun": "17908607300113",
+  "medida_caixa": "23 × 23 × 28 cm",
+  "qtd_master": "4",
+  "medida_master": "48 × 47 × 30 cm"
+ },
+ {
+  "grupo": "Umidificadores",
+  "sku": "06906",
+  "nome": "UMIDIFICADOR UMI ULTRA 4,3L",
+  "ean": "7908607300123",
+  "dun": "17908607300120",
+  "medida_caixa": "19 × 19 × 33,5 cm",
+  "qtd_master": "4",
+  "medida_master": "40 × 40 × 36 cm"
+ },
+ {
+  "grupo": "Bomba Tira-leite",
+  "sku": "12382",
+  "nome": "BOMBA TIRA-LEITE ELÉTRICA",
+  "ean": "7898952570008",
+  "dun": "17898952570005",
+  "medida_caixa": "20 × 9,5 × 13,5 cm",
+  "qtd_master": "4",
+  "medida_master": "21 × 20,5 × 28 cm"
+ },
+ {
+  "grupo": "Bomba Tira-leite",
+  "sku": "0001000665",
+  "nome": "BOMBA TIRA-LEITE MANUAL",
+  "ean": "7908607309652",
+  "dun": "17908607309659",
+  "medida_caixa": "24 × 9 × 21,5 cm",
+  "qtd_master": "6",
+  "medida_master": "49 × 28,5 × 23 cm"
+ },
+ {
+  "grupo": "Espaçador",
+  "sku": "07130",
+  "nome": "ESPAÇADOR",
+  "ean": "7908607305722",
+  "dun": "17908607305781",
+  "medida_caixa": "11 × 8,5 × 16,5 cm",
+  "qtd_master": "6",
+  "medida_master": "33,5 × 19 × 18 cm"
+ },
+ {
+  "grupo": "Aspirador",
+  "sku": "07037",
+  "nome": "ASPIRADOR DE SECREÇÃO MAXMED",
+  "ean": "7908607300178",
+  "dun": "17908607300175",
+  "medida_caixa": "37 × 19 × 27 cm",
+  "qtd_master": "1",
+  "medida_master": "37 × 19 × 27 cm"
+ },
+ {
+  "grupo": "Maca Maleta",
+  "sku": "0001000404",
+  "nome": "MACA MALETA",
+  "ean": "7908607308389",
+  "dun": "",
+  "medida_caixa": "97,5 × 20,5 × 78 cm",
+  "qtd_master": "1",
+  "medida_master": "97,5 × 20,5 × 78 cm"
+ },
+ {
+  "grupo": "Balanças",
+  "sku": "12383",
+  "nome": "BALANÇA DE BIOIMPEDÂNCIA",
+  "ean": "7898952570954",
+  "dun": "17898952570951",
+  "medida_caixa": "29 × 29 × 3 cm",
+  "qtd_master": "2",
+  "medida_master": "31 × 7 × 30,5 cm"
+ },
+ {
+  "grupo": "Balanças",
+  "sku": "06861",
+  "nome": "BALANÇA DIGITAL SMART - Cinza",
+  "ean": "7898952570770",
+  "dun": "17898952570777",
+  "medida_caixa": "29 × 29 × 3 cm",
+  "qtd_master": "5",
+  "medida_master": "30 × 17,5 × 31 cm"
+ },
+ {
+  "grupo": "Balanças",
+  "sku": "06862",
+  "nome": "BALANÇA DIGITAL SMART - Preta",
+  "ean": "7898952570787",
+  "dun": "17898952570777",
+  "medida_caixa": "29 × 29 × 3 cm",
+  "qtd_master": "5",
+  "medida_master": "30 × 17,5 × 31 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12377",
+  "nome": "ALMOFADA MASSAGEADORA SHIATSU",
+  "ean": "7898952570978",
+  "dun": "17898952570975",
+  "medida_caixa": "33 × 11 × 19 cm",
+  "qtd_master": "3",
+  "medida_master": "35 × 35 × 21 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "07065",
+  "nome": "COLETE MASSAGEADOR DE OMBROS ABRAÇAMED",
+  "ean": "7908607301557",
+  "dun": "17908607301554",
+  "medida_caixa": "40 × 17 × 20 cm",
+  "qtd_master": "2",
+  "medida_master": "42 × 37 × 22 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12380",
+  "nome": "ESTEIRA MASSAGEADORA",
+  "ean": "7898952570985",
+  "dun": "17898952570982",
+  "medida_caixa": "57 × 16 × 43 cm",
+  "qtd_master": "2",
+  "medida_master": "58,5 × 34,5 × 46,5 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12378",
+  "nome": "MASSAGEADOR CORPORAL HAMMER 127V",
+  "ean": "7908607300024",
+  "dun": "17908607300021",
+  "medida_caixa": "45,5 × 14,5 × 10 cm",
+  "qtd_master": "5",
+  "medida_master": "47 × 22 × 31 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12379",
+  "nome": "MASSAGEADOR CORPORAL HAMMER 220V",
+  "ean": "7898952570992",
+  "dun": "17898952570999",
+  "medida_caixa": "45,5 × 14,5 × 10 cm",
+  "qtd_master": "5",
+  "medida_master": "47 × 22 × 31 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12381",
+  "nome": "MASSAGEADOR DE PÉS SHIATSU",
+  "ean": "7908607300079",
+  "dun": "17908607300076",
+  "medida_caixa": "44,5 × 24 × 38 cm",
+  "qtd_master": "2",
+  "medida_master": "51 × 46 × 41,5 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12376",
+  "nome": "MASSAGEADOR ORBITAL 220V",
+  "ean": "7908607300055",
+  "dun": "17908607300052",
+  "medida_caixa": "25 × 11 × 17,5 cm",
+  "qtd_master": "4",
+  "medida_master": "37 × 26 × 24 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "12375",
+  "nome": "MASSAGEADOR ORBITAL 127V",
+  "ean": "7908607300048",
+  "dun": "17908607300045",
+  "medida_caixa": "25 × 11 × 17,5 cm",
+  "qtd_master": "4",
+  "medida_master": "37 × 26 × 24 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "0001000052",
+  "nome": "PISTOLA MASSAGEADORA MINI",
+  "ean": "7908607305746",
+  "dun": "17908607305743",
+  "medida_caixa": "23,5 × 18,5 × 7 cm",
+  "qtd_master": "2",
+  "medida_master": "23 × 16 × 20,5 cm"
+ },
+ {
+  "grupo": "Massageadores",
+  "sku": "06872",
+  "nome": "PISTOLA MASSAGEADORA MINI",
+  "ean": "7908607305746",
+  "dun": "17908607305743",
+  "medida_caixa": "23,5 × 18,5 × 7 cm",
+  "qtd_master": "2",
+  "medida_master": "23 × 16 × 20,5 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000669",
+  "nome": "BOLSA DE GELO ALMIOFLEX",
+  "ean": "7908607309690",
+  "dun": "17908607309697",
+  "medida_caixa": "27,9 cm (circular)",
+  "qtd_master": "20",
+  "medida_master": "43 × 32,5 × 21,5 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000670",
+  "nome": "BOLSA DE ÁGUA QUENTE THERMOMED",
+  "ean": "7908607309706",
+  "dun": "17908607309703",
+  "medida_caixa": "22 × 5 × 19,5 cm",
+  "qtd_master": "12",
+  "medida_master": "38 × 33 × 22 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000706",
+  "nome": "BOLSA TÉRMICA DE GEL COLORGEL - P",
+  "ean": "7908607310054",
+  "dun": "17908607310068",
+  "medida_caixa": "19 × 14 × 12 cm",
+  "qtd_master": "10",
+  "medida_master": "19 × 14 × 12 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000707",
+  "nome": "BOLSA TÉRMICA DE GEL COLORGEL - M",
+  "ean": "7908607310061",
+  "dun": "17908607310051",
+  "medida_caixa": "26 × 13 × 17 cm",
+  "qtd_master": "10",
+  "medida_master": "19 × 14 × 12 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000366",
+  "nome": "BOLSA TÉRMICA DE GEL - P",
+  "ean": "7908607308013",
+  "dun": "17908607308027",
+  "medida_caixa": "19 × 14 × 12 cm",
+  "qtd_master": "10",
+  "medida_master": "19 × 14 × 12 cm"
+ },
+ {
+  "grupo": "Bolsas Térmicas e de Gelo",
+  "sku": "0001000367",
+  "nome": "BOLSA TÉRMICA DE GEL - M",
+  "ean": "7908607308020",
+  "dun": "17908607308010",
+  "medida_caixa": "26 × 13 × 16 cm",
+  "qtd_master": "10",
+  "medida_master": "19 × 14 × 12 cm"
+ },
+ {
+  "grupo": "Botas Pneumáticas",
+  "sku": "0001000462",
+  "nome": "BOTAS PNEUMÁTICAS - P",
+  "ean": "7908607308662",
+  "dun": "",
+  "medida_caixa": "36 × 20 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "36 × 20 × 30 cm"
+ },
+ {
+  "grupo": "Botas Pneumáticas",
+  "sku": "0001000368",
+  "nome": "BOTAS PNEUMÁTICAS - M",
+  "ean": "7908607308006",
+  "dun": "",
+  "medida_caixa": "36 × 20 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "36 × 20 × 30 cm"
+ },
+ {
+  "grupo": "Botas Pneumáticas",
+  "sku": "0001000369",
+  "nome": "BOTAS PNEUMÁTICAS - G",
+  "ean": "7908607308037",
+  "dun": "",
+  "medida_caixa": "36 × 20 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "36 × 20 × 30 cm"
+ },
+ {
+  "grupo": "Botas Pneumáticas",
+  "sku": "0001001112",
+  "nome": "BOTA PNEUMÁTICA AIR RECOVERY LIGHT",
+  "ean": "7908607313581",
+  "dun": "",
+  "medida_caixa": "36,5 × 34,5 × 10 cm",
+  "qtd_master": "1",
+  "medida_master": "36,5 × 34,5 × 10 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07114",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Classic Sand",
+  "ean": "7908607305104",
+  "dun": "17908607305101",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07117",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Cotton Pink",
+  "ean": "7908607305050",
+  "dun": "17908607305057",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07116",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Midnight Black",
+  "ean": "7908607305074",
+  "dun": "17908607305071",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07113",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Ocean Blue",
+  "ean": "7908607305098",
+  "dun": "17908607305095",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07119",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Red Fire",
+  "ean": "7908607305081",
+  "dun": "17908607305088",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07115",
+  "nome": "FITAS KINESIOLÓGICAS K.O. - Sugar Brown",
+  "ean": "7908607305111",
+  "dun": "17908607305118",
+  "medida_caixa": "7,5 × 5,5 × 7,5 cm",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Fitas Kinésio",
+  "sku": "07118",
+  "nome": "FITAS KINESIOLÓGICAS K.O. (variante 07118)",
+  "ean": "",
+  "dun": "17908607305262",
+  "medida_caixa": "",
+  "qtd_master": "4",
+  "medida_master": "15,5 × 5,5 × 15 cm"
+ },
+ {
+  "grupo": "Colar Cervical",
+  "sku": "0001000717",
+  "nome": "COLAR CERVICAL - G",
+  "ean": "7908607310092",
+  "dun": "",
+  "medida_caixa": "15 × 10,8 × 18 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 10,8 × 18 cm"
+ },
+ {
+  "grupo": "Colar Cervical",
+  "sku": "0001000742",
+  "nome": "COLAR CERVICAL - M",
+  "ean": "7908607310290",
+  "dun": "",
+  "medida_caixa": "15 × 10,8 × 18 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 10,8 × 18 cm"
+ },
+ {
+  "grupo": "Colar Cervical",
+  "sku": "0001000741",
+  "nome": "COLAR CERVICAL - P",
+  "ean": "7908607310283",
+  "dun": "",
+  "medida_caixa": "15 × 10,8 × 18 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 10,8 × 18 cm"
+ },
+ {
+  "grupo": "Colar Cervical",
+  "sku": "0001001151",
+  "nome": "COLAR CERVICAL INFANTIL P/M",
+  "ean": "7908607313925",
+  "dun": "",
+  "medida_caixa": "10 × 15 × 10 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 15 × 10 cm"
+ },
+ {
+  "grupo": "Colar Cervical",
+  "sku": "0001001152",
+  "nome": "COLAR CERVICAL INFANTIL G/GG",
+  "ean": "7908607313932",
+  "dun": "",
+  "medida_caixa": "10 × 15 × 10 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 15 × 10 cm"
+ },
+ {
+  "grupo": "Cinta Lombar",
+  "sku": "0001000778",
+  "nome": "CINTA LOMBAR COM HASTES FLEXÍVEIS - E",
+  "ean": "7908607310757",
+  "dun": "",
+  "medida_caixa": "15,5 × 6 × 23 cm",
+  "qtd_master": "1",
+  "medida_master": "15,5 × 6 × 23 cm"
+ },
+ {
+  "grupo": "Cinta Lombar",
+  "sku": "0001000775",
+  "nome": "CINTA LOMBAR COM HASTES FLEXÍVEIS - U",
+  "ean": "7908607310740",
+  "dun": "",
+  "medida_caixa": "15,5 × 6 × 23 cm",
+  "qtd_master": "1",
+  "medida_master": "15,5 × 6 × 23 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000810",
+  "nome": "COLETE PUTTI COR NORMAL BAIXO - P",
+  "ean": "7908607310948",
+  "dun": "",
+  "medida_caixa": "17 × 11 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 11 × 35 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000811",
+  "nome": "COLETE PUTTI COR NORMAL BAIXO - M",
+  "ean": "7908607310962",
+  "dun": "",
+  "medida_caixa": "17 × 11 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 11 × 35 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000812",
+  "nome": "COLETE PUTTI COR NORMAL BAIXO - G",
+  "ean": "7908607310993",
+  "dun": "",
+  "medida_caixa": "17 × 11 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 11 × 35 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000813",
+  "nome": "COLETE PUTTI COR NORMAL BAIXO - GG",
+  "ean": "7908607311006",
+  "dun": "",
+  "medida_caixa": "17 × 11 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 11 × 35 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000818",
+  "nome": "COLETE PUTTI COR NORMAL ALTO - P",
+  "ean": "7908607311020",
+  "dun": "",
+  "medida_caixa": "43 × 18 × 11 cm",
+  "qtd_master": "1",
+  "medida_master": "43 × 18 × 11 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000821",
+  "nome": "COLETE PUTTI COR NORMAL ALTO - M",
+  "ean": "7908607311068",
+  "dun": "",
+  "medida_caixa": "43 × 18 × 11 cm",
+  "qtd_master": "1",
+  "medida_master": "43 × 18 × 11 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000822",
+  "nome": "COLETE PUTTI COR NORMAL ALTO - G",
+  "ean": "7908607311082",
+  "dun": "",
+  "medida_caixa": "43 × 18 × 11 cm",
+  "qtd_master": "1",
+  "medida_master": "43 × 18 × 11 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000823",
+  "nome": "COLETE PUTTI COR NORMAL ALTO - GG",
+  "ean": "7908607311105",
+  "dun": "",
+  "medida_caixa": "43 × 18 × 11 cm",
+  "qtd_master": "1",
+  "medida_master": "43 × 18 × 11 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000784",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO BAIXO - P",
+  "ean": "7908607310702",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 40 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000785",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO BAIXO - M",
+  "ean": "7908607310719",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 40 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000786",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO BAIXO - G",
+  "ean": "7908607310726",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 40 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000787",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO BAIXO - GG",
+  "ean": "7908607310733",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 40 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000799",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO ALTO - P",
+  "ean": "7908607310870",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 30 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000800",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO ALTO - M",
+  "ean": "7908607310887",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 30 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000806",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO ALTO - G",
+  "ean": "7908607310894",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 30 cm"
+ },
+ {
+  "grupo": "Coletes Putti",
+  "sku": "0001000809",
+  "nome": "COLETE MAX PUTTI CINZA ESCURO ALTO - GG",
+  "ean": "7908607310917",
+  "dun": "",
+  "medida_caixa": "20 × 4 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 4 × 30 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000789",
+  "nome": "CORRETOR POSTURAL ERGONÔMICO - E",
+  "ean": "7908607310771",
+  "dun": "",
+  "medida_caixa": "26 × 8 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "26 × 8 × 30 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000788",
+  "nome": "CORRETOR POSTURAL ERGONÔMICO - U",
+  "ean": "7908607310764",
+  "dun": "",
+  "medida_caixa": "26 × 8 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "26 × 8 × 30 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000824",
+  "nome": "CORRETOR POSTURAL - P",
+  "ean": "7908607311112",
+  "dun": "",
+  "medida_caixa": "18 × 5 × 26 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 5 × 26 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000827",
+  "nome": "CORRETOR POSTURAL - M",
+  "ean": "7908607311129",
+  "dun": "",
+  "medida_caixa": "18 × 5 × 26 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 5 × 26 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000828",
+  "nome": "CORRETOR POSTURAL - G",
+  "ean": "7908607311136",
+  "dun": "",
+  "medida_caixa": "18 × 5 × 26 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 5 × 26 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000829",
+  "nome": "CORRETOR POSTURAL - GG",
+  "ean": "7908607311136",
+  "dun": "",
+  "medida_caixa": "18 × 5 × 26 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 5 × 26 cm"
+ },
+ {
+  "grupo": "Corretores Posturais",
+  "sku": "0001000830",
+  "nome": "CORRETOR POSTURAL - XGG",
+  "ean": "7908607311136",
+  "dun": "",
+  "medida_caixa": "18 × 5 × 26 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 5 × 26 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000773",
+  "nome": "FAIXA 3 PAINÉIS DELLAMED - P",
+  "ean": "7908607310610",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 25 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 25 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000774",
+  "nome": "FAIXA 3 PAINÉIS DELLAMED - M",
+  "ean": "7908607310603",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 25 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 25 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000776",
+  "nome": "FAIXA 3 PAINÉIS DELLAMED - G",
+  "ean": "7908607310627",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 25 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 25 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000777",
+  "nome": "FAIXA 4 PAINÉIS DELLAMED - P",
+  "ean": "7908607310634",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 33 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 33 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000779",
+  "nome": "FAIXA 4 PAINÉIS DELLAMED - M",
+  "ean": "7908607310641",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 33 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 33 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000780",
+  "nome": "FAIXA 4 PAINÉIS DELLAMED - G",
+  "ean": "7908607310658",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 33 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 33 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000781",
+  "nome": "FAIXA 5 PAINÉIS DELLAMED - P",
+  "ean": "7908607310665",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 41 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 41 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000782",
+  "nome": "FAIXA 5 PAINÉIS DELLAMED - M",
+  "ean": "7908607310672",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 41 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 41 cm"
+ },
+ {
+  "grupo": "Faixas de Imobilização",
+  "sku": "0001000856",
+  "nome": "FAIXA 5 PAINÉIS DELLAMED - G",
+  "ean": "7908607311495",
+  "dun": "",
+  "medida_caixa": "19 × 3,5 × 41 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 3,5 × 41 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000793",
+  "nome": "IMOBILIZADOR DE JOELHO - ESTREITO TAM 50",
+  "ean": "7908607310818",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000794",
+  "nome": "IMOBILIZADOR DE JOELHO - ESTREITO TAM 60",
+  "ean": "7908607310825",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000795",
+  "nome": "IMOBILIZADOR DE JOELHO - ESTREITO TAM 70",
+  "ean": "7908607310832",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000796",
+  "nome": "IMOBILIZADOR DE JOELHO - LARGO TAM 50",
+  "ean": "7908607310849",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000797",
+  "nome": "IMOBILIZADOR DE JOELHO - LARGO TAM 60",
+  "ean": "7908607310856",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Imobilizador de Joelho",
+  "sku": "0001000798",
+  "nome": "IMOBILIZADOR DE JOELHO - LARGO TAM 70",
+  "ean": "7908607310863",
+  "dun": "",
+  "medida_caixa": "30 × 5 × 71 cm",
+  "qtd_master": "1",
+  "medida_master": "30 × 5 × 71 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000727",
+  "nome": "JOELHEIRA AJUSTÁVEL C/ ORIFÍCIO E REFORÇO PATELAR",
+  "ean": "7908607310191",
+  "dun": "",
+  "medida_caixa": "18 × 3 × 26,5 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 3 × 26,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000728",
+  "nome": "JOELHEIRA AJUSTÁVEL C/ ORIFÍCIO, REFORÇO PATELAR E HASTES FLEXÍVEIS",
+  "ean": "7908607310207",
+  "dun": "",
+  "medida_caixa": "18 × 3 × 26,5 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 3 × 26,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000729",
+  "nome": "JOELHEIRA ARTICULADA AJUSTÁVEL",
+  "ean": "7908607310238",
+  "dun": "",
+  "medida_caixa": "23 × 4 × 32 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 4 × 32 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000759",
+  "nome": "JOELHEIRA ARTICULADA CINTAS CRUZADAS - PP",
+  "ean": "7908607310467",
+  "dun": "",
+  "medida_caixa": "23 × 3,5 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3,5 × 34 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000760",
+  "nome": "JOELHEIRA ARTICULADA CINTAS CRUZADAS - P",
+  "ean": "7908607310474",
+  "dun": "",
+  "medida_caixa": "23 × 3,5 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3,5 × 34 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000761",
+  "nome": "JOELHEIRA ARTICULADA CINTAS CRUZADAS - M",
+  "ean": "7908607310481",
+  "dun": "",
+  "medida_caixa": "23 × 3,5 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3,5 × 34 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000730",
+  "nome": "JOELHEIRA ARTICULADA CINTAS CRUZADAS - G",
+  "ean": "7908607310221",
+  "dun": "",
+  "medida_caixa": "23 × 3,5 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3,5 × 34 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000762",
+  "nome": "JOELHEIRA ARTICULADA CINTAS CRUZADAS - GG",
+  "ean": "",
+  "dun": "",
+  "medida_caixa": "23 × 3,5 × 34 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3,5 × 34 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000755",
+  "nome": "JOELHEIRA ORIFÍCIO + REFORÇO PATELAR - PP",
+  "ean": "7908607310429",
+  "dun": "",
+  "medida_caixa": "17,5 × 3,5 × 22,5 cm",
+  "qtd_master": "1",
+  "medida_master": "17,5 × 3,5 × 22,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000756",
+  "nome": "JOELHEIRA ORIFÍCIO + REFORÇO PATELAR - P",
+  "ean": "7908607310436",
+  "dun": "",
+  "medida_caixa": "17,5 × 3,5 × 22,5 cm",
+  "qtd_master": "1",
+  "medida_master": "17,5 × 3,5 × 22,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000757",
+  "nome": "JOELHEIRA ORIFÍCIO + REFORÇO PATELAR - M",
+  "ean": "7908607310443",
+  "dun": "",
+  "medida_caixa": "17,5 × 3,5 × 22,5 cm",
+  "qtd_master": "1",
+  "medida_master": "17,5 × 3,5 × 22,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000726",
+  "nome": "JOELHEIRA ORIFÍCIO + REFORÇO PATELAR - G",
+  "ean": "7908607310184",
+  "dun": "",
+  "medida_caixa": "17,5 × 3,5 × 22,5 cm",
+  "qtd_master": "1",
+  "medida_master": "17,5 × 3,5 × 22,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000758",
+  "nome": "JOELHEIRA ORIFÍCIO + REFORÇO PATELAR - GG",
+  "ean": "7908607310450",
+  "dun": "",
+  "medida_caixa": "17,5 × 3,5 × 22,5 cm",
+  "qtd_master": "1",
+  "medida_master": "17,5 × 3,5 × 22,5 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000749",
+  "nome": "JOELHEIRA ELÁSTICA - P",
+  "ean": "7908607311419",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000750",
+  "nome": "JOELHEIRA ELÁSTICA - M",
+  "ean": "7908607311426",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000723",
+  "nome": "JOELHEIRA ELÁSTICA - G",
+  "ean": "7908607311433",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000753",
+  "nome": "JOELHEIRA KNIT - P",
+  "ean": "7908607310405",
+  "dun": "",
+  "medida_caixa": "23 × 3 × 32 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3 × 32 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000754",
+  "nome": "JOELHEIRA KNIT - M",
+  "ean": "7908607310412",
+  "dun": "",
+  "medida_caixa": "23 × 3 × 32 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3 × 32 cm"
+ },
+ {
+  "grupo": "Joelheiras",
+  "sku": "0001000725",
+  "nome": "JOELHEIRA KNIT - G",
+  "ean": "7908607310177",
+  "dun": "",
+  "medida_caixa": "23 × 3 × 32 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 3 × 32 cm"
+ },
+ {
+  "grupo": "Faixa Subpatelar",
+  "sku": "0001000971",
+  "nome": "FAIXA SUBPATELAR",
+  "ean": "7908607312027",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 19 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 19 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000839",
+  "nome": "BOTA IMOBILIZADORA CURTA ALUMÍNIO - P",
+  "ean": "7908607311303",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 35 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000840",
+  "nome": "BOTA IMOBILIZADORA CURTA ALUMÍNIO - M",
+  "ean": "7908607311310",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 35 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000841",
+  "nome": "BOTA IMOBILIZADORA CURTA ALUMÍNIO - G",
+  "ean": "7908607311327",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 35 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 35 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000842",
+  "nome": "BOTA IMOBILIZADORA LONGA ALUMÍNIO - P",
+  "ean": "7908607311297",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 52 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 52 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000844",
+  "nome": "BOTA IMOBILIZADORA LONGA ALUMÍNIO - M",
+  "ean": "7908607311334",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 52 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 52 cm"
+ },
+ {
+  "grupo": "Bota Imobilizadora",
+  "sku": "0001000845",
+  "nome": "BOTA IMOBILIZADORA LONGA ALUMÍNIO - G",
+  "ean": "7908607311341",
+  "dun": "",
+  "medida_caixa": "35 × 16 × 52 cm",
+  "qtd_master": "1",
+  "medida_master": "35 × 16 × 52 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000836",
+  "nome": "TORNOZELEIRA AJUSTÁVEL - U",
+  "ean": "7908607311235",
+  "dun": "",
+  "medida_caixa": "15 × 4,5 × 18 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 4,5 × 18 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000837",
+  "nome": "TORNOZELEIRA AJUSTÁVEL - E",
+  "ean": "7908607311242",
+  "dun": "",
+  "medida_caixa": "15 × 4,5 × 18 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 4,5 × 18 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000751",
+  "nome": "TORNOZELEIRA ELÁSTICA - P",
+  "ean": "7908607311440",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 36 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 36 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000752",
+  "nome": "TORNOZELEIRA ELÁSTICA - M",
+  "ean": "7908607311457",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000724",
+  "nome": "TORNOZELEIRA ELÁSTICA - G",
+  "ean": "7908607311464",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000763",
+  "nome": "TORNOZELEIRA CURTA NEOPRENE - PP",
+  "ean": "7908607311235",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000764",
+  "nome": "TORNOZELEIRA CURTA NEOPRENE - P",
+  "ean": "7908607310511",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000765",
+  "nome": "TORNOZELEIRA CURTA NEOPRENE - M",
+  "ean": "7908607310528",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000731",
+  "nome": "TORNOZELEIRA CURTA NEOPRENE - G",
+  "ean": "7908607310252",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000766",
+  "nome": "TORNOZELEIRA CURTA NEOPRENE - GG",
+  "ean": "7908607310535",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000767",
+  "nome": "TORNOZELEIRA LONGA NEOPRENE - PP",
+  "ean": "7908607310542",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000768",
+  "nome": "TORNOZELEIRA LONGA NEOPRENE - P",
+  "ean": "7908607310559",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000769",
+  "nome": "TORNOZELEIRA LONGA NEOPRENE - M",
+  "ean": "7908607310566",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000732",
+  "nome": "TORNOZELEIRA LONGA NEOPRENE - G",
+  "ean": "7908607310269",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000770",
+  "nome": "TORNOZELEIRA LONGA NEOPRENE - GG",
+  "ean": "7908607310573",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Tornozeleiras",
+  "sku": "0001000846",
+  "nome": "BANDAGEM ELÁSTICA DE TORNOZELO",
+  "ean": "",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Estabilizador de Tornozelo",
+  "sku": "0001001134",
+  "nome": "ESTABILIZADOR DE TORNOZELO - U",
+  "ean": "7908607313765",
+  "dun": "",
+  "medida_caixa": "20 × 15 × 4,5 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 15 × 4,5 cm"
+ },
+ {
+  "grupo": "Estabilizador de Tornozelo",
+  "sku": "0001001135",
+  "nome": "ESTABILIZADOR DE TORNOZELO - E",
+  "ean": "7908607313772",
+  "dun": "",
+  "medida_caixa": "20 × 15 × 4,5 cm",
+  "qtd_master": "1",
+  "medida_master": "20 × 15 × 4,5 cm"
+ },
+ {
+  "grupo": "Estabilizador de Tornozelo",
+  "sku": "0001001148",
+  "nome": "ESTABILIZADOR DE TORNOZELO KNIT - P",
+  "ean": "7908607313895",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Estabilizador de Tornozelo",
+  "sku": "0001001149",
+  "nome": "ESTABILIZADOR DE TORNOZELO KNIT - M",
+  "ean": "7908607313901",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Estabilizador de Tornozelo",
+  "sku": "0001001150",
+  "nome": "ESTABILIZADOR DE TORNOZELO KNIT - G",
+  "ean": "7908607313918",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Tennis Elbow",
+  "sku": "0001000970",
+  "nome": "TENNIS ELBOW",
+  "ean": "7908607312010",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Suporte para Ombro",
+  "sku": "0001001139",
+  "nome": "SUPORTE DE OMBRO KNIT - P",
+  "ean": "7908607313802",
+  "dun": "",
+  "medida_caixa": "23 × 18 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 18 × 3 cm"
+ },
+ {
+  "grupo": "Suporte para Ombro",
+  "sku": "0001001140",
+  "nome": "SUPORTE DE OMBRO KNIT - M",
+  "ean": "7908607313819",
+  "dun": "",
+  "medida_caixa": "23 × 18 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 18 × 3 cm"
+ },
+ {
+  "grupo": "Suporte para Ombro",
+  "sku": "0001001141",
+  "nome": "SUPORTE DE OMBRO KNIT - G",
+  "ean": "7908607313826",
+  "dun": "",
+  "medida_caixa": "23 × 18 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "23 × 18 × 3 cm"
+ },
+ {
+  "grupo": "Bandagem de Punho",
+  "sku": "0001000843",
+  "nome": "BANDAGEM ELÁSTICA DE PUNHO - E",
+  "ean": "7908607311266",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Bandagem de Punho",
+  "sku": "0001000838",
+  "nome": "BANDAGEM ELÁSTICA DE PUNHO - U",
+  "ean": "7908607311259",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Munhequeira",
+  "sku": "0001000721",
+  "nome": "MUNHEQUEIRA AJUSTÁVEL",
+  "ean": "7908607310139",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Protetor de Punho",
+  "sku": "0001000722",
+  "nome": "PROTETOR DE PUNHO",
+  "ean": "7908607310146",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000814",
+  "nome": "TALA LONGA BILATERAL DE PUNHO - P",
+  "ean": "7908607311013",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000815",
+  "nome": "TALA LONGA BILATERAL DE PUNHO - M",
+  "ean": "7908607311037",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000816",
+  "nome": "TALA LONGA BILATERAL DE PUNHO - G",
+  "ean": "7908607311044",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001153",
+  "nome": "TALA BILATERAL DE PUNHO INFANTIL P/M",
+  "ean": "",
+  "dun": "",
+  "medida_caixa": "18 × 11 × 3,5 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 11 × 3,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001154",
+  "nome": "TALA BILATERAL DE PUNHO INFANTIL G/GG",
+  "ean": "",
+  "dun": "",
+  "medida_caixa": "18 × 11 × 3,5 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 11 × 3,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001128",
+  "nome": "TALA BILATERAL DE PUNHO CURTA - P",
+  "ean": "7908607313703",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001129",
+  "nome": "TALA BILATERAL DE PUNHO CURTA - M",
+  "ean": "7908607313710",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001130",
+  "nome": "TALA BILATERAL DE PUNHO CURTA - G",
+  "ean": "7908607313727",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001131",
+  "nome": "TALA CURTA COM POLEGAR DIREITA - P",
+  "ean": "7908607313734",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001132",
+  "nome": "TALA CURTA COM POLEGAR DIREITO - M",
+  "ean": "7908607313741",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001133",
+  "nome": "TALA CURTA COM POLEGAR DIREITO - G",
+  "ean": "7908607313758",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001161",
+  "nome": "TALA CURTA COM POLEGAR ESQ - P",
+  "ean": "7908607313987",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001162",
+  "nome": "TALA CURTA COM POLEGAR ESQ - M",
+  "ean": "7908607313994",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001163",
+  "nome": "TALA CURTA COM POLEGAR ESQ - G",
+  "ean": "7908607314007",
+  "dun": "",
+  "medida_caixa": "19 × 10 × 4 cm",
+  "qtd_master": "1",
+  "medida_master": "19 × 10 × 4 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000802",
+  "nome": "TALA LONGA COM POLEGAR ESQ - P",
+  "ean": "7908607310900",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000803",
+  "nome": "TALA LONGA COM POLEGAR ESQ - M",
+  "ean": "7908607310924",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000804",
+  "nome": "TALA LONGA COM POLEGAR ESQ - G",
+  "ean": "7908607310931",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000805",
+  "nome": "TALA LONGA COM POLEGAR DIREITA - P",
+  "ean": "7908607310955",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000807",
+  "nome": "TALA LONGA COM POLEGAR DIREITA - M",
+  "ean": "7908607310979",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001000808",
+  "nome": "TALA LONGA COM POLEGAR DIREITA - G",
+  "ean": "7908607310986",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 25,5 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 25,5 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001137",
+  "nome": "TALA RIZARTROSE P/M",
+  "ean": "7908607313789",
+  "dun": "",
+  "medida_caixa": "15 × 12 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 12 × 30 cm"
+ },
+ {
+  "grupo": "Talas para Braços",
+  "sku": "0001001138",
+  "nome": "TALA RIZARTROSE G/GG",
+  "ean": "7908607313796",
+  "dun": "",
+  "medida_caixa": "15 × 12 × 30 cm",
+  "qtd_master": "1",
+  "medida_master": "15 × 12 × 30 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001000720",
+  "nome": "COTOVELEIRA AJUSTÁVEL - U",
+  "ean": "7908607310122",
+  "dun": "",
+  "medida_caixa": "10 × 3 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 3 × 16 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001000747",
+  "nome": "COTOVELEIRA ELÁSTICA - P",
+  "ean": "7908607311761",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001000748",
+  "nome": "COTOVELEIRA ELÁSTICA - M",
+  "ean": "7908607311778",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001000779",
+  "nome": "COTOVELEIRA ELÁSTICA - G",
+  "ean": "7908607311785",
+  "dun": "",
+  "medida_caixa": "10 × 4 × 16 cm",
+  "qtd_master": "1",
+  "medida_master": "10 × 4 × 16 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "1001145",
+  "nome": "COTOVELEIRA KNIT - P",
+  "ean": "7908607313864",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001001146",
+  "nome": "COTOVELEIRA KNIT - M",
+  "ean": "7908607313871",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Cotovelheiras",
+  "sku": "0001001147",
+  "nome": "COTOVELEIRA KNIT - G",
+  "ean": "7908607313888",
+  "dun": "",
+  "medida_caixa": "16 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "16 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Estabilizador de Punho",
+  "sku": "0001001142",
+  "nome": "ESTABILIZADOR DE PUNHO KNIT - P",
+  "ean": "7908607313833",
+  "dun": "",
+  "medida_caixa": "18 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Estabilizador de Punho",
+  "sku": "0001001143",
+  "nome": "ESTABILIZADOR DE PUNHO KNIT - M",
+  "ean": "7908607313840",
+  "dun": "",
+  "medida_caixa": "18 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Estabilizador de Punho",
+  "sku": "0001001144",
+  "nome": "ESTABILIZADOR DE PUNHO KNIT - G",
+  "ean": "7908607313857",
+  "dun": "",
+  "medida_caixa": "18 × 10 × 3 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 10 × 3 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000831",
+  "nome": "TIPÓIA SIMPLES - PP",
+  "ean": "7908607311174",
+  "dun": "",
+  "medida_caixa": "17 × 3,5 × 21 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 3,5 × 21 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000832",
+  "nome": "TIPÓIA SIMPLES - P",
+  "ean": "7908607311181",
+  "dun": "",
+  "medida_caixa": "17 × 3,5 × 21 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 3,5 × 21 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000833",
+  "nome": "TIPÓIA SIMPLES - M",
+  "ean": "7908607311198",
+  "dun": "",
+  "medida_caixa": "17 × 3,5 × 21 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 3,5 × 21 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000834",
+  "nome": "TIPÓIA SIMPLES - G",
+  "ean": "7908607311204",
+  "dun": "",
+  "medida_caixa": "17 × 3,5 × 21 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 3,5 × 21 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000835",
+  "nome": "TIPÓIA SIMPLES - GG",
+  "ean": "7908607311228",
+  "dun": "",
+  "medida_caixa": "17 × 3,5 × 21 cm",
+  "qtd_master": "1",
+  "medida_master": "17 × 3,5 × 21 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000743",
+  "nome": "TIPÓIA VELPEAU - PP",
+  "ean": "7908607310306",
+  "dun": "",
+  "medida_caixa": "18 × 4,5 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 4,5 × 40 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000744",
+  "nome": "TIPÓIA VELPEAU - P",
+  "ean": "7908607310313",
+  "dun": "",
+  "medida_caixa": "18 × 4,5 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 4,5 × 40 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000745",
+  "nome": "TIPÓIA VELPEAU - M",
+  "ean": "7908607310320",
+  "dun": "",
+  "medida_caixa": "18 × 4,5 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 4,5 × 40 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000718",
+  "nome": "TIPÓIA VELPEAU - G",
+  "ean": "7908607310108",
+  "dun": "",
+  "medida_caixa": "18 × 4,5 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 4,5 × 40 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001000746",
+  "nome": "TIPÓIA VELPEAU - GG",
+  "ean": "7908607310337",
+  "dun": "",
+  "medida_caixa": "18 × 4,5 × 40 cm",
+  "qtd_master": "1",
+  "medida_master": "18 × 4,5 × 40 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001001155",
+  "nome": "TIPOIA VELPEAU INFANTIL P/M",
+  "ean": "7908607313963",
+  "dun": "",
+  "medida_caixa": "24 × 17 × 5 cm",
+  "qtd_master": "1",
+  "medida_master": "24 × 17 × 5 cm"
+ },
+ {
+  "grupo": "Tipóias",
+  "sku": "0001001156",
+  "nome": "TIPOIA VELPEAU INFANTIL G/GG",
+  "ean": "7908607313970",
+  "dun": "",
+  "medida_caixa": "24 × 17 × 5 cm",
+  "qtd_master": "1",
+  "medida_master": "24 × 17 × 5 cm"
+ }
+]
